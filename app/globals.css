@@ -1,0 +1,508 @@
+/* Noor Islamic Website — global styles. Mobile-first, no external requests. */
+
+:root {
+  --emerald-900: #0b3d2e;
+  --emerald-700: #14694e;
+  --emerald-600: #17805f;
+  --emerald-50: #eef7f2;
+  --gold-500: #c9a227;
+  --gold-100: #faf3dd;
+  --ink: #1e2a25;
+  --muted: #5c6f66;
+  --paper: #fffdf7;
+  --card: #ffffff;
+  --line: #e7e0cf;
+  --radius: 14px;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+    "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--serif);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.wrap {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.1rem;
+}
+
+a {
+  color: var(--emerald-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--emerald-900);
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: var(--emerald-900);
+  color: #fff;
+  border-bottom: 4px solid var(--gold-500);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.brand:hover {
+  color: var(--gold-100);
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: var(--gold-500);
+  color: var(--emerald-900);
+  font-size: 1.3rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  font-family: var(--sans);
+  font-size: 0.98rem;
+}
+
+.main-nav a {
+  color: #eaf4ee;
+  text-decoration: none;
+  padding: 0.25rem 0.1rem;
+}
+
+.main-nav a:hover {
+  color: var(--gold-100);
+  text-decoration: underline;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(180deg, var(--emerald-50), var(--paper));
+  border-bottom: 1px solid var(--line);
+  padding: 2.6rem 0 2.2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  color: var(--emerald-900);
+  margin: 0 0 0.9rem;
+  text-wrap: balance;
+}
+
+.hero .lede {
+  max-width: 44rem;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.hero-cta {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--sans);
+  font-weight: 700;
+  background: var(--emerald-700);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+}
+
+.btn:hover {
+  background: var(--emerald-900);
+  color: #fff;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--emerald-700);
+  border: 2px solid var(--emerald-700);
+}
+
+.btn-ghost:hover {
+  background: var(--emerald-50);
+  color: var(--emerald-900);
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 2.4rem 0;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.section-head h2 {
+  font-size: 1.6rem;
+  color: var(--emerald-900);
+  margin: 0;
+}
+
+.section-head p {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  max-width: 46rem;
+}
+
+.more-link {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.cards {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(11, 61, 46, 0.05);
+}
+
+.card-title {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin: 0 0 0.5rem;
+}
+
+.card-title a {
+  color: var(--emerald-900);
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+  color: var(--emerald-700);
+}
+
+.card-summary {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  font-size: 0.99rem;
+}
+
+.card-meta {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--emerald-700);
+  font-weight: 600;
+}
+
+/* ---------- Page head (inner pages) ---------- */
+.page-head {
+  padding: 2.2rem 0 0.6rem;
+}
+
+.page-head h1 {
+  font-size: 1.9rem;
+  line-height: 1.3;
+  color: var(--emerald-900);
+  margin: 0 0 0.7rem;
+  text-wrap: balance;
+}
+
+.page-head .lede {
+  color: var(--muted);
+  max-width: 46rem;
+  margin: 0;
+}
+
+/* ---------- Breadcrumbs ---------- */
+.breadcrumbs ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.breadcrumbs li + li::before {
+  content: "›";
+  margin-right: 0.4rem;
+  color: var(--gold-500);
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+/* ---------- Article ---------- */
+.article-body {
+  max-width: 44rem;
+}
+
+.article-body p {
+  margin: 0 0 1.2rem;
+}
+
+.article-meta {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1.4rem;
+}
+
+.moral-box {
+  background: var(--gold-100);
+  border-left: 5px solid var(--gold-500);
+  border-radius: 0 12px 12px 0;
+  padding: 1.1rem 1.3rem;
+  margin: 1.8rem 0;
+}
+
+.moral-box h2 {
+  font-family: var(--sans);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--emerald-900);
+  margin: 0 0 0.4rem;
+}
+
+.moral-box p {
+  margin: 0;
+}
+
+.source-note {
+  font-size: 0.92rem;
+  color: var(--muted);
+  border-top: 1px dashed var(--line);
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.related {
+  margin-top: 2.6rem;
+}
+
+.related h2 {
+  font-size: 1.4rem;
+  color: var(--emerald-900);
+}
+
+.back-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  font-family: var(--sans);
+  font-weight: 600;
+}
+
+/* ---------- Static content pages ---------- */
+.prose {
+  max-width: 44rem;
+  padding-bottom: 2.5rem;
+}
+
+.prose h2 {
+  color: var(--emerald-900);
+  font-size: 1.45rem;
+  margin: 2rem 0 0.7rem;
+}
+
+.prose h3 {
+  color: var(--emerald-900);
+  font-size: 1.15rem;
+  margin: 1.6rem 0 0.5rem;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.4rem;
+}
+
+/* ---------- FAQ ---------- */
+.faq {
+  background: var(--emerald-50);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.faq details {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.faq details:last-child {
+  border-bottom: none;
+}
+
+.faq summary {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--emerald-900);
+  cursor: pointer;
+}
+
+.faq p {
+  margin: 0.6rem 0 0.2rem;
+  color: var(--muted);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--emerald-900);
+  color: #d8e7de;
+  margin-top: 3rem;
+  border-top: 4px solid var(--gold-500);
+}
+
+.footer-grid {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: 1fr;
+  padding-top: 2.2rem;
+  padding-bottom: 1.6rem;
+}
+
+.footer-brand {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0 0 0.4rem;
+}
+
+.footer-tag {
+  margin: 0;
+  font-size: 0.95rem;
+  max-width: 22rem;
+}
+
+.footer-h {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--gold-100);
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer li {
+  margin: 0.3rem 0;
+}
+
+.site-footer a {
+  color: #d8e7de;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-base {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1rem;
+  padding-bottom: 1.4rem;
+  font-size: 0.88rem;
+  color: #a9c4b5;
+}
+
+.footer-base p {
+  margin: 0;
+}
+
+/* ---------- Larger screens ---------- */
+@media (min-width: 640px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .page-head h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
