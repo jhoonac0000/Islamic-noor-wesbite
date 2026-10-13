@@ -1,5 +1,6 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
+import Reveal from "@/components/Reveal";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export default function StaticPage({
@@ -34,10 +35,15 @@ export default function StaticPage({
   return (
     <div className="wrap">
       <JsonLd data={breadcrumbJsonLd} />
-      <div className="page-head">
-        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: title }]} />
-        <h1>{title}</h1>
-      </div>
+      <Reveal>
+        <div className="page-head">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: title }]} />
+          <div className="page-ornament" aria-hidden="true">
+            ✦
+          </div>
+          <h1>{title}</h1>
+        </div>
+      </Reveal>
       <div className="prose">{children}</div>
       <p style={{ fontSize: "0.9rem", color: "var(--muted)" }}>
         {SITE_NAME} — {url}

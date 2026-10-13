@@ -5,13 +5,13 @@ import { SITE_URL, getCategory } from "@/lib/site";
 const cat = getCategory("everyday")!;
 
 export const metadata: Metadata = {
-  title: "Everyday Issues — Islamic Answers for Daily Life",
+  title: "Islamic Answers to Everyday Questions | Noor",
   description: cat.metaDescription,
   alternates: { canonical: `${SITE_URL}/everyday` },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/everyday`,
-    title: "Everyday Issues — Islamic Answers for Daily Life | Noor",
+    title: "Islamic Answers to Everyday Questions | Noor",
     description: cat.metaDescription,
   },
 };

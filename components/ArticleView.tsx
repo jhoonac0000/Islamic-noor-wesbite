@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
+import Reveal from "@/components/Reveal";
 import {
   SITE_NAME,
   SITE_URL,
@@ -101,15 +102,20 @@ export default function ArticleView({
     <div className="wrap">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
-      <div className="page-head">
-        <Breadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: category.name, href: `/${dir}` },
-            { label: articleTitle(article) },
-          ]}
-        />
-      </div>
+      <Reveal>
+        <div className="page-head">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: category.name, href: `/${dir}` },
+              { label: articleTitle(article) },
+            ]}
+          />
+          <div className="page-ornament" aria-hidden="true">
+            ✦
+          </div>
+        </div>
+      </Reveal>
       <article className="article-body">
         <h1>{article.title}</h1>
         {metaBits.length > 0 && (
@@ -117,13 +123,17 @@ export default function ArticleView({
         )}
         {article.asked && <p className="article-meta">{article.asked}</p>}
         {article.body.map((para, i) => (
-          <p key={i}>{para}</p>
+          <p key={i} className={i === 0 ? "lede-para" : undefined}>
+            {para}
+          </p>
         ))}
         {article.moral && (
-          <aside className="moral-box" aria-label="Moral of the story">
-            <h2>The Lesson</h2>
-            <p>{article.moral}</p>
-          </aside>
+          <Reveal>
+            <aside className="moral-box" aria-label="Moral of the story">
+              <h2>The Lesson</h2>
+              <p>{article.moral}</p>
+            </aside>
+          </Reveal>
         )}
         {article.ref && <p className="source-note">{article.ref}</p>}
       </article>
@@ -131,15 +141,17 @@ export default function ArticleView({
       {related.length > 0 && (
         <section className="related" aria-label="Related stories">
           <h2>Related stories</h2>
-          <ul className="cards">
-            {related.map((r) => (
-              <li key={r.href} className="card">
-                <h3 className="card-title">
-                  <Link href={r.href}>{r.label}</Link>
-                </h3>
-              </li>
-            ))}
-          </ul>
+          <Reveal className="reveal-group">
+            <ul className="cards">
+              {related.map((r) => (
+                <li key={r.href} className="card">
+                  <h3 className="card-title">
+                    <Link href={r.href}>{r.label}</Link>
+                  </h3>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
         </section>
       )}
 

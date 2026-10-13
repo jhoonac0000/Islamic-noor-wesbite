@@ -1,6 +1,7 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ArticleCard from "@/components/ArticleCard";
 import JsonLd from "@/components/JsonLd";
+import Reveal from "@/components/Reveal";
 import { SITE_URL, getAllArticles, getCategory } from "@/lib/site";
 
 const H1: Record<string, string> = {
@@ -27,21 +28,28 @@ export default function CategoryPage({ dir }: { dir: string }) {
   return (
     <div className="wrap">
       <JsonLd data={breadcrumbJsonLd} />
-      <div className="page-head">
-        <Breadcrumbs
-          items={[{ label: "Home", href: "/" }, { label: category.name }]}
-        />
-        <h1>{H1[dir] ?? category.name}</h1>
-        <p className="lede">{category.blurb}</p>
-      </div>
+      <Reveal>
+        <div className="page-head">
+          <Breadcrumbs
+            items={[{ label: "Home", href: "/" }, { label: category.name }]}
+          />
+          <div className="page-ornament" aria-hidden="true">
+            ✦
+          </div>
+          <h1>{H1[dir] ?? category.name}</h1>
+          <p className="lede">{category.blurb}</p>
+        </div>
+      </Reveal>
       <section className="section" aria-label={`${category.name} articles`}>
-        <ul className="cards">
-          {entries.map((entry) => (
-            <li key={entry.slug}>
-              <ArticleCard entry={entry} />
-            </li>
-          ))}
-        </ul>
+        <Reveal className="reveal-group">
+          <ul className="cards">
+            {entries.map((entry) => (
+              <li key={entry.slug}>
+                <ArticleCard entry={entry} />
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </section>
     </div>
   );

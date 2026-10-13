@@ -7,6 +7,7 @@ export default function ArticleCard({ entry }: { entry: ArticleEntry }) {
   const tag = article.lesson || article.topic;
   return (
     <article className="card">
+      <span className="card-badge">{category.name}</span>
       <h3 className="card-title">
         <Link href={`/${category.dir}/${slug}`}>{article.title}</Link>
       </h3>

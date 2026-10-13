@@ -5,13 +5,13 @@ import { SITE_URL, getCategory } from "@/lib/site";
 const cat = getCategory("stories")!;
 
 export const metadata: Metadata = {
-  title: "Stories & Waqiat — Islamic Moral Stories",
+  title: "Islamic Stories & Waqiat With Moral Lessons | Noor",
   description: cat.metaDescription,
   alternates: { canonical: `${SITE_URL}/stories` },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/stories`,
-    title: "Stories & Waqiat — Islamic Moral Stories | Noor",
+    title: "Islamic Stories & Waqiat With Moral Lessons | Noor",
     description: cat.metaDescription,
   },
 };

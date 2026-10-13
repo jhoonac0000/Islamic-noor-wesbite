@@ -227,6 +227,8 @@ export const kidsStories: Article[] = [
 export const waqiat: Article[] = [
 {
   title: "The Shopkeeper Who Would Not Lie",
+  seoTitle: "Islamic Story About Honesty: The Shopkeeper | Noor",
+  seoDescription: "A cloth merchant finds a hidden tear in his finest fabric — and chooses honesty over fortune. An original Islamic story for kids and families.",
   lesson: "Honesty",
   ages: "For everyone",
   mins: "6 min read",
@@ -244,6 +246,8 @@ export const waqiat: Article[] = [
 },
 {
   title: "The Well of Umm Salim",
+  seoTitle: "Islamic Story About Generosity: Umm Salim's Well | Noor",
+  seoDescription: "In a year of drought, a poor widow's well becomes her village's lifeline. An original Islamic story about generosity and trust in Allah.",
   lesson: "Charity",
   ages: "For everyone",
   mins: "5 min read",
@@ -259,6 +263,8 @@ export const waqiat: Article[] = [
 },
 {
   title: "The Night the Lantern Stayed Lit",
+  seoTitle: "Islamic Story About Perseverance: The Lantern | Noor",
+  seoDescription: "A poor orphan sweeps the mosque by day and studies under its lantern by night. An original Islamic story about perseverance.",
   lesson: "Knowledge",
   ages: "For everyone",
   mins: "6 min read",
@@ -274,6 +280,8 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Trust and Amanat: The Baker Who Kept the Key",
+  seoTitle: "Islamic Story About Trust (Amanat): The Baker | Noor",
+  seoDescription: "What is amanat? A baker guards a neighbour's key — and shows what Islam teaches about trust. An original Islamic story for families.",
   lesson: "Honesty",
   ages: "For everyone",
   mins: "6 min read",
@@ -297,6 +305,8 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Keeping Promises: The Merchant's Word",
+  seoTitle: "Islamic Story About Keeping Promises: The Merchant | Noor",
+  seoDescription: "A merchant's promise becomes hard to keep — but keeping it protects trust and brings lasting good. An original Islamic story for kids.",
   lesson: "Honesty",
   ages: "For everyone",
   mins: "6 min read",
@@ -322,6 +332,8 @@ export const waqiat: Article[] = [
 },
 {
   title: "The Farmer Who Planted in a Storm",
+  seoTitle: "Islamic Story About Patience: The Farmer | Noor",
+  seoDescription: "When the rains fail, old farmer Yusuf keeps planting anyway. An original Islamic story about patience (sabr) and trust in Allah's plan.",
   lesson: "Patience in hardship",
   ages: "For everyone",
   mins: "6 min read",
@@ -347,7 +359,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Kindness to Neighbours: The Extra Plate of Food",
-  seoTitle: "Islamic Story About Kindness to Neighbours: The Extra Plate of Food",
+  seoTitle: "Islamic Story About Kindness to Neighbours | Noor",
   seoDescription: "An original Islamic story about kindness to neighbours: how one extra plate of food built a friendship that carried two families through hardship. Lesson, application and discussion.",
   slug: "kindness-to-neighbours-extra-plate",
   lesson: "Kindness to neighbours",
@@ -381,6 +393,8 @@ export const waqiat: Article[] = [
 export const qaItems: Article[] = [
 {
   title: "I keep missing Fajr because of my work schedule. What can I do?",
+  seoTitle: "How to Wake Up for Fajr With a Busy Work Schedule | Noor",
+  seoDescription: "Missing Fajr because of work? Gentle Islamic advice on waking up for Fajr — sleep habits, alarms, and intention that actually work.",
   topic: "Prayer & Worship",
   asked: "Asked by Umm Maryam, United Kingdom · Answered 8 October 2026",
   summary: "First, take heart: the fact that this troubles you is itself a sign of faith. The five daily prayers are the pillar of our religion, and Fajr — prayed while the world sleeps — carries a special weight precisely because it is hard.",
@@ -393,6 +407,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "My job sometimes makes me miss Friday prayer (Jumu‘ah). What should I do?",
+  seoTitle: "Missing Jumuah Because of Work: What Islam Says | Noor",
+  seoDescription: "Work making you miss Jumuah? What Islam actually says about the Friday prayer obligation — and practical steps when your job gets in the way.",
   topic: "Prayer & Worship",
   asked: "Asked by Bilal, Canada · Answered 5 October 2026",
   summary: "Jumu‘ah is an obligation upon adult Muslim men, established by the Qur’an itself, which commands the believers, when the call is made on Friday, to hasten to the remembrance of Allah and leave trade aside (Surah al-Jumu‘ah, 62:9). It is not a optional extra in a Muslim’s week.",
@@ -405,6 +421,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "How can my husband and I disagree without it turning into anger and days of silence?",
+  seoTitle: "How to Disagree Without Anger: Marriage Advice | Noor",
+  seoDescription: "Marriage disagreements turning into anger and silence? Islamic guidance on disagreeing with love and mercy — without harming your spouse.",
   topic: "Family & Home",
   asked: "Asked anonymously, United Arab Emirates · Answered 6 October 2026",
   summary: "Disagreement is not the disease; anger and contempt are. Allah describes marriage as a bond in which He placed love and mercy (mawaddah wa rahmah) between spouses (Qur’an 30:21) — disagreement handled with mercy can actually deepen that bond, while silence handled with pride corrodes it.",
@@ -417,6 +435,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "I lose my temper with my children and regret it every night. How do I change?",
+  seoTitle: "Losing Temper With Kids? An Islamic Parenting Guide | Noor",
+  seoDescription: "Losing your temper with your children and regretting it nightly? A calm Islamic parenting guide to managing anger and reconnecting with love.",
   topic: "Character & Heart",
   asked: "Asked by Fatima, Australia · Answered 7 October 2026",
   summary: "Begin here: regret is the beginning of change, not proof of failure. A parent who never regretted would have far more to fear. The Prophet ﷺ redefined strength for us: “The strong is not the one who overcomes people by wrestling; the strong is the one who controls himself when angry.”",
@@ -429,6 +449,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "Is it allowed to take a bank loan with interest (riba) to buy a house?",
+  seoTitle: "Is Taking an Interest Loan for a House Haram? | Noor",
+  seoDescription: "Is an interest-based home loan haram? The mainstream Islamic position on riba explained plainly, with halal alternatives to consider.",
   topic: "Money & Work",
   asked: "Asked by Ahmed, United States · Answered 4 October 2026",
   summary: "We will answer plainly. The mainstream position of the four schools of Islamic law, held across fourteen centuries, is that a loan which charges interest is riba, and riba is prohibited in the Qur’an in the strongest terms (Surah al-Baqarah, 2:275–279). A conventional mortgage, as it is normally structured, falls under this prohibition for the majority of scholars.",
@@ -441,6 +463,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "My income is small. Is there any point in giving charity — and do I even owe zakat?",
+  seoTitle: "Does Small Charity Count? Zakat on Low Income | Noor",
+  seoDescription: "Small income, big heart: does small charity count, and do you owe zakat? A clear Islamic guide to zakat and sadaqah on a tight budget.",
   topic: "Money & Work",
   asked: "Asked anonymously, South Africa · Answered 3 October 2026",
   summary: "Two different questions live inside yours. Zakat is a calculated duty: 2.5% of qualifying savings that have remained above the nisab threshold for a full lunar year. If your income is honestly consumed by your family’s needs and your savings never reach that threshold, then no zakat is due from you — indeed, you may be among those eligible to receive it. Do not let anyone make you feel guilty for a duty Allah has not placed on you.",
@@ -454,6 +478,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "My parents want me to marry someone I do not like. What does Islam actually say?",
+  seoTitle: "Forced Marriage in Islam: What Are Your Rights? | Noor",
+  seoDescription: "Forced into a marriage you don't want? What Islam actually says about consent in marriage and your rights — explained with care.",
   topic: "Family & Home",
   asked: "Asked by Maryam, United Kingdom · Answered 2 October 2026",
   summary: "Islam gives you a real voice in this. A marriage forced upon a woman who withholds her consent is not the Prophet’s ﷺ way: he annulled a marriage a father had arranged without his daughter’s agreement, and he taught that a virgin’s consent must be sought before she is married (reported by al-Bukhari and Muslim). Your “no” is not rebellion; within Islam, it is a right.",
@@ -467,6 +493,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Control My Anger Quickly? A Calm Islamic Guide",
+  seoTitle: "How to Control Anger Quickly: An Islamic Guide | Noor",
+  seoDescription: "Need to control anger fast? Quick Islamic techniques — pause, breathe, change position — that calm you before anger makes you act.",
   topic: "Character & Heart",
   asked: "Reader question · Answered 10 October 2026",
   summary: "Islam does not ask you to never feel anger — anger is a human feeling. It teaches you to control what anger makes you do: pause before speaking, change your position, make wudu, and remember that the strong person is not the one who overpowers others, but the one who controls himself when angry. The steps below are simple, practical, and drawn from well-known prophetic guidance.",
@@ -489,6 +517,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Do I Stay Consistent with My Prayers? A Practical Islamic Guide",
+  seoTitle: "How to Stay Consistent With 5 Daily Prayers | Noor",
+  seoDescription: "Struggling to keep all five prayers? A practical Islamic guide to consistency — routines, reminders, and small steps that build the habit.",
   topic: "Prayer & Worship",
   asked: "Practical guide · Published 10 October 2026",
   summary: "Start by giving each prayer a fixed place in your day: know its time, connect it to a routine you already follow, prepare before the time arrives, and pray as soon as you reasonably can. Consistency usually grows from a simple system repeated daily—not from waiting until you feel perfectly motivated.",
@@ -511,6 +541,8 @@ export const qaItems: Article[] = [
 },
 {
   title: "I have some savings but no idea how zakat works. How do I calculate what I owe?",
+  seoTitle: "How to Calculate Zakat on Savings: Simple Guide | Noor",
+  seoDescription: "How to calculate zakat on savings: the nisab threshold, the 2.5% rule, and a simple step-by-step — explained for beginners.",
   topic: "Money & Work",
   asked: "Zakat guide · Published 12 October 2026",
   summary: "The short answer: if your qualifying savings have stayed at or above the nisab threshold for a full lunar year, you owe 2.5% of them as zakat. The three steps below make it simple — what counts, how to find the threshold, and how to pay.",
@@ -531,7 +563,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Pray on Time at Work? A Practical Guide for Busy Muslims",
-  seoTitle: "How Can I Pray on Time at Work? A Practical Guide for Busy Muslims",
+  seoTitle: "How to Pray on Time at Work: Practical Tips | Noor",
   seoDescription: "Missing Zuhr or Asr because of work? Practical Islamic guidance for praying on time at the office: prayer times, talking to your manager, finding a spot, staying consistent.",
   slug: "pray-on-time-at-work-guide",
   topic: "Prayer & Worship",

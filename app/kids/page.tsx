@@ -5,13 +5,13 @@ import { SITE_URL, getCategory } from "@/lib/site";
 const cat = getCategory("kids")!;
 
 export const metadata: Metadata = {
-  title: "Kids Zone — Islamic Stories for Kids",
+  title: "Islamic Stories for Kids | Bedtime & Moral Tales | Noor",
   description: cat.metaDescription,
   alternates: { canonical: `${SITE_URL}/kids` },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/kids`,
-    title: "Kids Zone — Islamic Stories for Kids | Noor",
+    title: "Islamic Stories for Kids | Bedtime & Moral Tales | Noor",
     description: cat.metaDescription,
   },
 };
