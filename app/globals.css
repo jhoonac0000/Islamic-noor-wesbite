@@ -308,6 +308,64 @@ a:hover {
   box-shadow: none;
 }
 
+/* ---------- YouTube ---------- */
+.nav-yt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: var(--gold-300);
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border: 1.5px solid rgba(201, 162, 39, 0.55);
+  border-radius: 999px;
+  transition: background 0.25s var(--ease-out), transform 0.25s var(--ease-out);
+}
+
+.nav-yt:hover {
+  background: rgba(201, 162, 39, 0.14);
+  transform: translateY(-1px);
+  color: var(--gold-200);
+}
+
+.youtube-cta {
+  background: linear-gradient(135deg, var(--emerald-950), var(--emerald-900));
+  border-top: 1px solid rgba(201, 162, 39, 0.25);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.25);
+}
+
+.youtube-cta-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.youtube-cta-inner h2 {
+  color: #fff;
+}
+
+.youtube-cta-inner p {
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 34rem;
+}
+
+.btn-youtube {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #c00;
+  background: linear-gradient(180deg, #e62117, #b3120f);
+  color: #fff;
+  box-shadow: 0 10px 24px -10px rgba(230, 33, 23, 0.7);
+}
+
+.btn-youtube:hover {
+  color: #fff;
+  box-shadow: 0 16px 30px -10px rgba(230, 33, 23, 0.8);
+}
+
 /* ---------- Scroll reveal ---------- */
 .reveal {
   opacity: 0;

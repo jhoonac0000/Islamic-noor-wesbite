@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CATEGORIES, SITE_NAME } from "@/lib/site";
+import { CATEGORIES, SITE_NAME, YOUTUBE_URL } from "@/lib/site";
 
 export default function Footer() {
   return (
@@ -51,6 +51,11 @@ export default function Footer() {
                 rel="noopener"
               >
                 Facebook Page
+              </a>
+            </li>
+            <li>
+              <a href={YOUTUBE_URL} rel="noopener">
+                YouTube Channel
               </a>
             </li>
           </ul>

@@ -8,6 +8,7 @@ import {
   HOME_FAQS,
   SITE_NAME,
   SITE_URL,
+  YOUTUBE_URL,
   getAllArticles,
 } from "@/lib/site";
 
@@ -134,6 +135,40 @@ export default function HomePage() {
               <Link href="/about" className="more-link">
                 Read our story →
               </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section youtube-cta" aria-labelledby="h-youtube">
+        <div className="wrap">
+          <Reveal>
+            <div className="youtube-cta-inner">
+              <div>
+                <p className="section-kicker">Watch &amp; Listen</p>
+                <h2 id="h-youtube">Noor on YouTube</h2>
+                <p>
+                  Prefer watching? Our Islamic stories come alive on the
+                  Arhamasif22 YouTube channel — new moral stories, shorts,
+                  and reminders for the whole family.
+                </p>
+              </div>
+              <a
+                href={YOUTUBE_URL}
+                className="btn btn-youtube"
+                rel="noopener"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2C0 8.07 0 12 0 12s0 3.93.5 5.8a3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z" />
+                </svg>
+                Subscribe on YouTube
+              </a>
             </div>
           </Reveal>
         </div>
