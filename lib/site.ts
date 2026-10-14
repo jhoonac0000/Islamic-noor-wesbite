@@ -1,6 +1,6 @@
 import { Article, kidsStories, waqiat, qaItems } from "@/data/articles";
 
-export const SITE_URL = "https://noor-islamic-website.pages.dev";
+export const SITE_URL = "https://islamic-noor-wesbite.vercel.app";
 export const SITE_NAME = "Noor Islamic Website";
 export const YOUTUBE_URL = "https://youtube.com/@arhamasif22_official";
 
