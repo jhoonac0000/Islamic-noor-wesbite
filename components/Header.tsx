@@ -17,6 +17,7 @@ export default function Header() {
               {c.name}
             </Link>
           ))}
+          <Link href="/tools">Tools</Link>
           <Link href="/about">About</Link>
           <a
             href={YOUTUBE_URL}

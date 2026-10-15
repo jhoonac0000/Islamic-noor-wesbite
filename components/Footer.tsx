@@ -23,6 +23,9 @@ export default function Footer() {
                 <Link href={`/${c.dir}`}>{c.name}</Link>
               </li>
             ))}
+            <li>
+              <Link href="/tools">Islamic Tools</Link>
+            </li>
           </ul>
         </nav>
         <nav aria-label="About Noor">
