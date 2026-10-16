@@ -29,6 +29,34 @@ const PRESETS: { name: string; lat: number; lng: number }[] = [
   { name: "New York, USA", lat: 40.7128, lng: -74.006 },
 ];
 
+/** Haversine distance in km between two coordinates. */
+function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number) {
+  const R = 6371;
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLng = ((lng2 - lng1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLng / 2) *
+      Math.sin(dLng / 2);
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+
+/** Index of the nearest preset city within 200 km, or -1. */
+function nearestPresetIdx(lat: number, lng: number): number {
+  let best = -1;
+  let bestDist = 200;
+  PRESETS.forEach((p, i) => {
+    const d = haversineKm(lat, lng, p.lat, p.lng);
+    if (d < bestDist) {
+      bestDist = d;
+      best = i;
+    }
+  });
+  return best;
+}
+
 export default function LocationPicker({
   value,
   onChange,
@@ -44,12 +72,16 @@ export default function LocationPicker({
   const autoTried = useRef(false);
 
   const applyPosition = (lat: number, lng: number) => {
-    setPresetIdx("");
-    onChange({
-      lat,
-      lng,
-      label: "Your current location",
-    });
+    // Show the nearest city in the dropdown for context, but keep the
+    // exact GPS coordinates for the calculations.
+    const near = nearestPresetIdx(lat, lng);
+    if (near >= 0) {
+      setPresetIdx(String(near));
+      onChange({ lat, lng, label: `Your current location (near ${PRESETS[near].name})` });
+    } else {
+      setPresetIdx("");
+      onChange({ lat, lng, label: "Your current location" });
+    }
   };
 
   const useMyLocation = (auto = false) => {
@@ -78,7 +110,7 @@ export default function LocationPicker({
           );
         }
       },
-      { timeout: 12000 }
+      { timeout: 12000, enableHighAccuracy: true, maximumAge: 60000 }
     );
   };
 
