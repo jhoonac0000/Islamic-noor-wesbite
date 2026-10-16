@@ -116,8 +116,9 @@ export default function QiblaTool() {
       {!result ? (
         <div className="tool-panel">
           <p style={{ margin: 0 }}>
-            Choose a city or share your location above to find your Qibla
-            direction.
+            We try to detect your location automatically for exact results —
+            please allow location access when your browser asks. Otherwise,
+            choose a city or share your location above.
           </p>
         </div>
       ) : (
