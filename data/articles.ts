@@ -350,6 +350,35 @@ export const kidsStories: Article[] = [
   ],
   showFullBody: true,
 },
+{
+  title: "Islamic Story for Kids About Forgiveness: The Torn Kite",
+  seoTitle: "Islamic Story for Kids About Forgiveness | Noor",
+  seoDescription: "Read a gentle Islamic story for kids about forgiveness — Zara's brand-new kite tears on its first flight, and she learns why forgiving feels better than staying angry.",
+  slug: "forgiveness-torn-kite",
+  lesson: "Forgiveness",
+  ages: "Ages 5–9",
+  mins: "3 min read",
+  summary: "Zara waited a whole week to fly her brand-new kite. Then, on its very first flight, it tore — and her cousin Hamza had been holding the string. Zara had a choice: stay angry, or forgive.",
+  moral: "Forgiving someone who says sorry is stronger than staying angry. When we forgive, our own heart feels light again.",
+  ref: "Allah tells us in the Qur'an that He loves those who forgive others (Surah Aal-e-Imran, 3:134 — meaning in our own words).",
+  body: [
+    "Forgiving someone is not easy — but it is one of the strongest things a heart can do. This is the story of Zara, her brand-new kite, and the afternoon she learned what forgiveness feels like.",
+    "Zara got the kite for her birthday: bright red, with a long golden tail. But all week the air was still and calm — no wind at all. Zara looked out of the window every single morning and sighed. “Not today either.”",
+    "Then Saturday came, and the trees were dancing. “Wind!” Zara shouted, and ran to the park with her cousin Hamza. She let Hamza hold the string for a little while, because that is what good cousins do. Up, up went the kite — higher and higher — and then a sudden gust pulled hard. Hamza stumbled, the string slipped, and the kite crashed into a tree branch. TEEAR! A long rip ran right across the red sail.",
+    "Zara's face went hot. “You ruined it!” she cried. “I waited all week!” Hamza's eyes filled with tears. “I didn't mean to,” he whispered. “I'm really sorry, Zara.” But Zara was too angry to listen. She picked up the torn kite and ran home.",
+    "Mama was waiting at the door. She looked at the torn kite, and then at Zara's angry face. “Did Hamza tear it on purpose?” Mama asked gently. Zara shook her head. “No. It was an accident.” Mama smiled. “Then think, my love — how would you feel if you made a mistake and nobody forgave you?”",
+    "Zara thought about that all the way through lunch. A mistake is not the same as being mean, she realized. And Hamza had said sorry with tears in his eyes. After lunch, Zara walked back to the park. “Hamza,” she said, “I forgive you. It was an accident.” Hamza's whole face lit up like the sun. Together they taped the torn sail, and the kite flew again — a little crooked, a little funny — and both cousins laughed until their tummies hurt.",
+    "That evening Zara told Mama, “You were right. When I was angry, my heart felt heavy. When I forgave, it felt light again.” Mama hugged her tight. “That light feeling,” she said, “is the reward of forgiveness. Allah loves the hearts that forgive.”",
+    "Lesson for today: When someone hurts you by accident and says sorry, forgiving them makes YOUR heart feel better too. Try it this week — and watch how light your heart feels.",
+    "Question: Is there someone you are still angry with? What is one small step you could take to forgive them?",
+  ],
+  links: [
+    { title: "Bilal and the Cracked Jug", kind: "kids", idx: 1, href: "#kids" },
+    { title: "Islamic Story About Repentance and Hope: The Carpenter's Secret", kind: "waqiat", idx: 9, href: "#waqiat" },
+  ],
+  showFullBody: true,
+},
+
 ];
 export const waqiat: Article[] = [
 {
@@ -642,6 +671,37 @@ export const waqiat: Article[] = [
   ],
   showFullBody: true,
 },
+{
+  title: "Islamic Story About Justice: The Judge's Broken Window",
+  seoTitle: "Islamic Story About Justice and Fairness | Noor",
+  seoDescription: "An original Islamic story about justice: a baker's window is smashed on market day — and the judge discovers the stone was thrown by his own son.",
+  slug: "justice-judges-broken-window",
+  lesson: "Justice",
+  ages: "For everyone",
+  mins: "6 min read",
+  summary: "On a busy market day, a stone smashes the baker's shop window. When the case reaches Qadi Bilal's court, the judge learns the stone was thrown by his own son — and the whole town watches what he will do.",
+  moral: "Justice means one rule for everyone — even your own family. A judge who bends the rules for his own son cannot be trusted with anyone.",
+  ref: "Based on the Islamic teaching to stand firm for justice even against oneself or one's relatives (Surah an-Nisa, 4:135 — meaning in our own words); story is original fiction written to illustrate the lesson.",
+  body: [
+    "Justice means treating everyone the same — the rich and the poor, the stranger and the friend. But the hardest test of justice is this: what do you do when the person who did wrong is your own son? This is the story of Qadi Bilal and the broken window.",
+    "Qadi Bilal was the judge of a small town, and people trusted him. “He does not take sides,” the townspeople said. “Not for money, not for friendship.” Every morning he sat in the small courtroom by the market, listened to both sides, and gave his ruling — and even those who lost a case said, “The Qadi was fair.”",
+    "One busy market day, a stone flew through the air and smashed the big glass window of the baker's shop. Glass scattered across the fresh bread. The baker was furious. “Who did this?” he shouted. Three boys had been playing near the square — and one of them, the baker said, was Tariq, the Qadi's own son.",
+    "The next morning, the baker brought his complaint to the court. Qadi Bilal listened carefully, as he always did. He asked questions. He heard the witnesses. And the truth came out plainly: the boys had been throwing stones at a target, one stone had gone wild, and Tariq's stone was the one that broke the window.",
+    "The courtroom went very quiet. Everyone was thinking the same thing: will the Qadi protect his own son? Qadi Bilal looked at Tariq — his boy, standing small and ashamed — and then he spoke clearly: “My son broke the window. My son will pay for a new one, from his own savings, and he will apologize to the baker in person. The law is the law — for the baker's son and for the Qadi's son alike.”",
+    "Tariq paid for the window, coin by coin, from the money he had been saving for a new saddle. He apologized to the baker with his head bowed. And something unexpected happened: the baker, who had come to court angry, left the courtroom respecting the Qadi more than ever. “Today,” he told his friends, “I saw justice with my own eyes.”",
+    "Years later, Tariq grew into a man the town admired — honest in trade, fair to his workers. When people asked him why, he always said the same thing: “Because my father taught me that justice begins at home. A man who bends the rules for his own family will bend them for anyone — and a man who is just with his own son can be trusted to be just with everyone.”",
+    "Lesson: Justice is not justice if it changes with the person. The moment we make exceptions for our family, our friends, or ourselves, fairness dies. True justice is one rule for everyone — and it must begin with the people closest to us.",
+    "Daily-life application: (1) When you judge a situation, ask yourself: “Would I decide the same if the other person were my best friend — or a stranger?” If the answer changes, your justice has a leak. (2) If someone close to you is wrong, do not cover for them — help them make it right instead. Covering a wrong is not loyalty; it is a second wrong. (3) In small daily matters — dividing food, taking turns, settling arguments between children — practice the same fairness you expect from others. (4) When you are in the wrong yourself, admit it quickly and accept the consequence. That is the bravest form of justice.",
+    "Discussion question: Think of a time when being fair was hard because someone you love was involved. What did you do — and what would Qadi Bilal have done?",
+    "Source note: This story is original fiction written to illustrate justice, based on the Islamic teaching to stand firm for justice even against oneself or one's relatives (meaning in our own words).",
+  ],
+  links: [
+    { title: "The Shopkeeper Who Would Not Lie", kind: "waqiat", idx: 0, href: "#waqiat" },
+    { title: "Bilal and the Cracked Jug", kind: "kids", idx: 1, href: "#kids" },
+  ],
+  showFullBody: true,
+},
+
 ];
 export const qaItems: Article[] = [
 {
@@ -952,4 +1012,33 @@ export const qaItems: Article[] = [
   ],
   showFullBody: true,
 },
+{
+  title: "How Can I Make My Duas More Heartfelt and Meaningful? A Practical Islamic Guide",
+  seoTitle: "How to Make Dua More Meaningful: A Practical Guide | Noor",
+  seoDescription: "Duas feeling rushed and empty? A practical Islamic guide to making heartfelt, meaningful dua — with simple steps, the best times for dua, and gentle answers to common questions.",
+  slug: "meaningful-dua-practical-guide",
+  topic: "Worship & Heart",
+  asked: "Practical guide · Published 18 October 2026",
+  summary: "You asked: “My duas feel rushed and empty — the same words every day, and my mind wanders. How do I make dua that truly comes from my heart?”",
+  ref: "Allah says in the Qur'an: “Call upon Me; I will respond to you” (Surah Ghafir, 40:60 — meaning in our own words); the Prophet Muhammad ﷺ taught that Allah answers a servant's supplication as long as he does not ask for sin or for cutting family ties (reported in Muslim — meaning in our own words). This guide is original educational wording, not a copied fatwa.",
+  body: [
+    "You asked: “My duas feel rushed and empty — the same words every day, and my mind wanders halfway through. How do I make dua that truly comes from my heart?”",
+    "Noor's answer: Yes — dua can become the most heartfelt part of your day, and the wandering mind is not a sign of failure; it is a sign that your dua has become a routine instead of a conversation. The fix is not longer duas. It is more present duas. Here is a practical plan.",
+    "1. Begin with praise, not with requests. Before asking for anything, spend a few moments praising Allah — for the breath in your lungs, the roof over your head, the food you ate today. Then send salawat upon the Prophet ﷺ. Starting with gratitude changes the whole temperature of your dua: you stop feeling like a beggar at a door and start feeling like a loved servant talking to the Most Merciful. Many people find their duas become heartfelt the moment they stop opening with “give me” and start with “thank You.”",
+    "2. Speak in your own words too. The beautiful Arabic duas from the Qur'an and Sunnah are treasures — learn them and use them. But Allah understands every language, and pouring out your own need in your own words is not less spiritual; it is often more heartfelt. Try this: after your memorized duas, talk to Allah plainly, like you would tell a trusted friend what is weighing on you. Specific, honest, unpolished. That is where the tears usually come.",
+    "3. Be specific about what you ask. “Bless me” is true but vague; “O Allah, help me stay calm with my children today, and make my interview go well” is a conversation. Naming your need does two things: it forces your mind to stay present, and it lets you recognize the answer when it comes — which makes your next dua even more heartfelt. Keep a small dua list on your phone if it helps; ticking off answered duas is one of the sweetest feelings in worship.",
+    "4. Choose the moments when the door is widest open. Some times carry special promise: the last third of the night, while you are fasting, between the adhan and the iqamah, and in sujood during prayer — the Prophet ﷺ taught that a servant is closest to his Lord in prostration, so make plenty of dua there (reported in Muslim — meaning in our own words). You do not need all of these; pick one and protect it. A dua made in the quiet of the night, with the house asleep, reaches the heart differently.",
+    "5. Ask with certainty — and do not rush the answer. Believe, as you ask, that Allah hears you and will answer in the way that is best for you — now, later, or as something even better, or as protection from harm. And do not give up because the answer is slow: the Prophet ﷺ warned against saying “I made dua and was not answered” and then stopping (reported in Muslim — meaning in our own words). A delayed answer is not a rejected dua. Keep asking; persistence is itself worship.",
+    "6. End with thanks — before you see the answer. Thank Allah for listening, for what He has already given, and for whatever He will choose. Gratitude at the end of dua seals it: it tells your heart that you trust the One you just asked. Many people notice that their duas feel most meaningful not when they get what they want, but when they finish feeling calm, hopeful, and close to Allah — whatever the outcome.",
+    "Verified-source note: Allah says: “Call upon Me; I will respond to you” (Surah Ghafir, 40:60 — meaning in our own words). The Prophet Muhammad ﷺ taught that a servant is closest to his Lord in prostration, so increase dua there (reported in Muslim — meaning in our own words), and that Allah continues to answer a servant's supplication as long as he does not ask for sin or for severing family ties, and does not grow impatient (reported in Muslim — meaning in our own words). The steps above reflect widely taught Islamic principles on dua, written here in original wording as general education.",
+    "A gentle note on scholarly differences: scholars agree on the heart of dua — asking Allah sincerely — but discuss some details with care, such as the rulings around raising the hands in different situations, or making dua aloud together after prayers. Practices differ between communities, and none of these differences should disturb the sincerity of your worship. For the details of your own practice, please consult a trusted local scholar and follow what your community's scholars teach.",
+    "Disclaimer: This is general educational guidance, not a personal fatwa. For your own situation, please consult a trusted local scholar.",
+  ],
+  links: [
+    { title: "How Do I Stay Consistent with My Prayers? A Practical Islamic Guide", kind: "qa", idx: 8, href: "#qa" },
+    { title: "Islamic Story About Trust in Allah: The Traveller's Empty Waterskin", kind: "waqiat", idx: 10, href: "#waqiat" },
+  ],
+  showFullBody: true,
+},
+
 ];
