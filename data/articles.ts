@@ -378,7 +378,35 @@ export const kidsStories: Article[] = [
   ],
   showFullBody: true,
 },
-
+{
+  title: "Islamic Story for Kids About Kindness to Animals: The Grey Stray",
+  seoTitle: "Islamic Story for Kids About Kindness to Animals | Noor",
+  seoDescription: "Read a gentle Islamic story for kids about kindness to animals — Ahmed finds a hurt stray cat in the bushes and learns that no kindness is too small.",
+  slug: "kindness-animals-grey-stray",
+  lesson: "Kindness",
+  ages: "Ages 5–9",
+  mins: "3 min read",
+  summary: "Ahmed hears a faint meow from the bushes and finds a skinny grey stray cat with a hurt paw. What he does next teaches him that kindness to animals is never small in Allah's sight.",
+  moral: "Kindness is not only for people. A bowl of water for a thirsty animal is seen by Allah — and no act of kindness is ever too small.",
+  ref: "The Prophet Muhammad ﷺ told of a man who gave water to a thirsty dog and was forgiven by Allah for it (reported in al-Bukhari and Muslim — meaning in our own words).",
+  body: [
+    "Kindness is not only for people — it is for every creature Allah made. A bowl of water for a thirsty cat, a soft hand for a hurt bird — Allah sees all of it, and He loves it. This is the story of Ahmed, a skinny grey stray, and the boy who learned how big a small kindness can be.",
+    "Ahmed was eight, and he walked home from school the same way every day — past the corner shop, past the big tree, past the bushes where the street cats slept in the sun. One rainy afternoon, he heard a small, shaky sound from the bushes: \"Meow… meow…\" It was so soft that he almost missed it.",
+    "Ahmed pushed the leaves aside. There sat the skinniest cat he had ever seen — grey all over, like the rainy sky. One of its front paws was cut and swollen, and the cat was too weak to stand. It looked up at Ahmed with big, tired eyes. Ahmed's heart squeezed. He could not just walk away.",
+    "He ran home and told his mother. She helped him fill a small bowl with milk and soft bread, and gave him her old, clean handkerchief. \"Do not touch the cut with your bare hands, and be gentle,\" she warned. \"Stray animals are scared. Let the cat come to you.\" Back at the bushes, Ahmed set the bowl down and sat very still. The grey cat sniffed the air… then limped forward and ate, slowly, gratefully.",
+    "That evening, Ahmed's mother told him something he never forgot. \"You know, the Prophet Muhammad ﷺ told us about a man who gave water to a thirsty dog from his shoe. That one small act was so loved by Allah that the man was forgiven. Kindness to animals is never small in Allah's sight.\" Ahmed went to sleep thinking about the grey cat, and his heart felt warm.",
+    "Every day after school, Ahmed brought food and fresh water. He kept the bushes dry with an old umbrella. Slowly, the paw healed. And then one sunny morning, the grey cat — Ahmed now called him Grey — did something wonderful: he rubbed his head against Ahmed's leg and purred, the loudest purr Ahmed had ever heard.",
+    "Grey still lives by the big tree. He is no longer skinny, and he waits at the corner every afternoon when Ahmed walks home from school. And Ahmed learned a lesson he tells everyone: kindness is not only for people. The animals cannot ask for help with words — so when we help them, it is a very special kind of goodness.",
+    "Lesson for today: Do one kind thing for an animal this week — a bowl of fresh water for the birds, or food for a stray cat. Remember: ask a grown-up to help you, and never grab a scared animal. Allah sees your kindness, and He loves it.",
+    "Question: If you found a hungry or hurt animal, what would you do first — and which grown-up would you ask for help?",
+    "Source note: This story is original fiction. It is based on the Islamic teaching that Allah rewards kindness to every living creature, including the story of a man who gave water to a thirsty dog and was forgiven (reported in al-Bukhari and Muslim — meaning in our own words).",
+  ],
+  links: [
+    { title: "The Thirsty Cat", kind: "kids", idx: 7, href: "#kids" },
+    { title: "Islamic Story About Trust in Allah: The Traveller's Empty Waterskin", kind: "waqiat", idx: 10, href: "#waqiat" },
+  ],
+  showFullBody: true,
+},
 ];
 export const waqiat: Article[] = [
 {
@@ -701,7 +729,38 @@ export const waqiat: Article[] = [
   ],
   showFullBody: true,
 },
-
+{
+  title: "Islamic Story About the Courage to Admit Mistakes: The Broken Scale",
+  seoTitle: "Islamic Story About Admitting Mistakes With Courage | Noor",
+  seoDescription: "An original Islamic story about the courage to admit mistakes: a dented scale weight, a hidden error, and the boy who chose honesty over comfort.",
+  slug: "courage-admit-mistakes-broken-scale",
+  lesson: "Honesty",
+  ages: "For everyone",
+  mins: "6 min read",
+  summary: "Sixteen-year-old Salim dents the shop's brass weight and hides it — until guilt, a trusting customer, and his father's words push him toward the hardest, bravest choice of his life.",
+  moral: "A mistake confessed and repaired becomes trust; a mistake hidden becomes a second, heavier mistake.",
+  ref: "Based on the Prophetic teaching that the best of those who err are those who turn back (reported in at-Tirmidhi — meaning in our own words); story is original fiction written to illustrate the lesson.",
+  body: [
+    "Admitting a mistake is one of the bravest things a person can do. Hiding it is easy — but the hidden thing does not disappear; it sits in the heart and grows heavy. This is the story of Salim, a boy, a broken scale, and the morning he chose courage over comfort.",
+    "Salim was sixteen and worked in his father's small grain shop in the old market. He was quick and cheerful, and customers liked him. One busy morning, in a hurry to serve a long line, he knocked the brass weight off the counter. CLANG! It hit the stone floor and got a small dent on one side.",
+    "Salim picked it up and tested it. The dent was tiny — but it was enough. The weight was now a little lighter than it should be, which meant the scale would show a little less grain than the customer was really getting. Every sack he weighed that morning gave the customer slightly less — while they paid the full price.",
+    "His first thought was to tell his father. His second thought stopped him: Baba would be angry. The weight was expensive. He might lose a week's pay — or worse, his father's trust. So Salim said nothing. He put the dented weight back on the counter and kept working, and with every customer, the heavy feeling in his chest grew a little heavier.",
+    "Old Bibi Zainab came for her weekly flour. She counted her coins carefully — she always did — and thanked Salim with a warm smile. \"May Allah bless your honest shop, my son.\" The words burned. She trusted him, and he was short-changing her without her knowing. That night, Salim could not sleep. He tossed and turned, and every time he closed his eyes, he saw Bibi Zainab's trusting smile.",
+    "The next morning his father praised him: \"You worked so fast yesterday, Salim! I am proud of you.\" The praise hurt more than anger would have. Salim remembered something his father often said: \"A scale that cheats is a thief's hand.\" And he remembered the teaching of the Prophet ﷺ — that every child of Adam makes mistakes, and the best of those who make mistakes are those who turn back and make it right.",
+    "So Salim did the hardest thing he had ever done. He took the dented weight to his father and told him everything — the accident, the fear, the silence. \"I am sorry, Baba. I will accept whatever you decide.\" His father was quiet for a long moment. Then he put his hand on Salim's shoulder. \"I am angry about the weight,\" he said. \"But I am proud of the son. Hiding it would have made you smaller. Telling me has made you bigger.\"",
+    "Together they did what had to be done. They bought a new, true weight. Then father and son went to every customer they could remember from that day — starting with Bibi Zainab — and returned the missing grain, with an apology. Bibi Zainab held Salim's face in her hands. \"You made a mistake and you fixed it, my son. That is worth more to me than perfect grain.\"",
+    "Something unexpected happened after that. Word spread through the market — not about the mistake, but about the honesty. People began saying, \"Buy from the shop where the boy confessed — they will never cheat you.\" The shop's name became \"the honest shop,\" and it was busier than ever. Salim had feared that admitting his mistake would cost him everything. Instead, it gave him the one thing money cannot buy: trust.",
+    "Lesson: A mistake confessed and repaired becomes trust; a mistake hidden becomes a second, heavier mistake. Courage is not never falling — it is standing up quickly, saying \"I was wrong,\" and making it right.",
+    "Daily-life application: (1) Admit mistakes quickly — the longer you wait, the heavier they get and the harder the repair. (2) Fix what you can: return what was taken, repair what was broken, apologize to the one you hurt. Sorry without repair is only half a sorry. (3) Accept the consequence with dignity — do not hide behind excuses or blame others; excuses turn one mistake into two. (4) If someone confesses a mistake to you, meet them with mercy, the way Salim's father did. Mercy after confession teaches more than anger ever could.",
+    "Discussion question: Is there a mistake you have been carrying quietly? What is one small, brave step you could take this week to make it right?",
+    "Source note: This story is original fiction written to illustrate the courage of admitting mistakes, based on the Prophetic teaching that every child of Adam errs, and the best of those who err are those who turn back (reported in at-Tirmidhi — meaning in our own words), and on the Qur'anic teaching that Allah loves those who turn to Him (Surah al-Baqarah, 2:222 — meaning in our own words).",
+  ],
+  links: [
+    { title: "Islamic Story About Repentance and Hope: The Carpenter's Secret", kind: "waqiat", idx: 9, href: "#waqiat" },
+    { title: "Bilal and the Cracked Jug", kind: "kids", idx: 1, href: "#kids" },
+  ],
+  showFullBody: true,
+},
 ];
 export const qaItems: Article[] = [
 {
@@ -1040,5 +1099,32 @@ export const qaItems: Article[] = [
   ],
   showFullBody: true,
 },
-
+{
+  title: "How Can I Cope with Grief and Loss? A Gentle Islamic Guide",
+  seoTitle: "How to Cope with Grief and Loss in Islam: A Gentle Guide | Noor",
+  seoDescription: "Grieving a loved one? A gentle Islamic guide to coping with grief and loss — what Islam says about tears, and practical steps that carry you through.",
+  slug: "cope-grief-loss-islamic-guide",
+  topic: "Character & Heart",
+  asked: "Practical guide · Published 19 October 2026",
+  summary: "You asked: \"I lost someone I love, and the grief feels endless. Does Islam allow me to grieve — and how do I get through this without losing my faith?\"",
+  ref: "The Prophet Muhammad ﷺ wept at the death of his son Ibrahim, saying the eyes shed tears and the heart grieves (reported in al-Bukhari and Muslim — meaning in our own words); \"Indeed we belong to Allah, and to Him we shall return\" (Surah al-Baqarah, 2:156 — meaning in our own words). This guide is original educational wording, not a copied fatwa.",
+  body: [
+    "You asked: \"I lost someone I love, and the pain feels endless. Does Islam even allow me to grieve — and how do I get through this without my faith breaking?\"",
+    "Noor's answer: Yes — grief is not a weakness of faith. The Prophet Muhammad ﷺ himself wept when his infant son Ibrahim died, and he said that the eyes shed tears and the heart grieves. Grief is the price of love, and Islam does not ask you to feel nothing. It asks you to grieve with hope, not without it. Here is a gentle path through the hardest days.",
+    "1. Give yourself permission to grieve. Some people think strong faith means dry eyes. It does not. When the Prophet's ﷺ son Ibrahim died, tears rolled down his blessed face, and his companions were surprised. He explained that the eyes shed tears and the heart feels grief — what is rejected is only the despairing kind of wailing that refuses Allah's decree (reported in al-Bukhari and Muslim — meaning in our own words). So cry. Feel it. You are not failing your religion by missing someone — you are being human, the way the best of humans was.",
+    "2. Hold on to the words of the patient. When loss first strikes, Muslims are taught to say: \"Inna lillahi wa inna ilayhi raji'un\" — indeed we belong to Allah, and to Him we shall return (Surah al-Baqarah, 2:156 — meaning in our own words). Say it slowly, even if your voice shakes. It is not magic; it is an anchor. It reminds a drowning heart of the deepest truth: nothing was ever truly ours — every loved one was a trust from Allah, and a trust, by definition, one day returns to its Owner.",
+    "3. Turn your love into ongoing charity for them. Grief asks, \"What can I do now?\" Islam answers: a great deal. Give charity on their behalf — feed someone, fund a water well, support a student. The Prophet ﷺ taught that when a person dies, their deeds come to an end except for three: ongoing charity, beneficial knowledge, and a righteous child who prays for them (reported in Muslim — meaning in our own words). Make dua for them daily, by name. Ask Allah to forgive them and raise their rank. Every dua you make is a gift that reaches them — and every gift you give in their name keeps their good growing even now.",
+    "4. Protect your worship, even in small doses. Grief disrupts everything — sleep, appetite, and often prayer too. Do not let sadness turn into distance from Allah; that is exactly when you need Him most. You do not have to pray long, perfect prayers right now. Even short, honest ones count. Sit after prayer and talk to Allah plainly about your pain — He already knows it, and telling Him is itself healing. If dua feels heavy, start with praise and thanks, then ask.",
+    "5. Care for the body that carries the grief. Grief is not only in the heart — it lives in the body: the heaviness in the chest, the tiredness that sleep does not fix. Islam's mercy covers this too. Eat regularly, even simply. Walk in fresh air. Rest without guilt. And if the grief feels too heavy to carry alone — if you cannot function, or despair starts whispering — reach out: to trusted family, to your imam, or to a professional counsellor. Seeking help is not a lack of faith; it is taking the means, and taking the means is part of faith.",
+    "6. Let time do its gentle work. The sharpest pain does soften — not because love fades, but because the heart learns to carry it. There will come a day when you remember them and smile through the tears instead of breaking. That is not betrayal; that is healing, and it is a mercy from Allah. Keep their memory alive in the best way: live the goodness they taught you, and let your life be their ongoing charity.",
+    "Verified-source note: \"The eyes shed tears and the heart grieves\" (reported in al-Bukhari and Muslim — meaning in our own words); \"Indeed we belong to Allah, and to Him we shall return\" (Surah al-Baqarah, 2:156 — meaning in our own words); \"Allah is with the patient\" (Surah al-Baqarah, 2:153 — meaning in our own words); the three deeds that continue after death — ongoing charity, beneficial knowledge, and a righteous child who prays — (reported in Muslim — meaning in our own words). The steps above reflect widely taught Islamic principles on grief, written here in original wording as general education.",
+    "A gentle note on scholarly differences: scholars and communities differ on some details of mourning — for example, the length and form of formal mourning, customs around visiting graves, and the specific rulings of the waiting period for a widow. These differences are real and respected; follow what trusted scholars in your community teach, and do not judge another grieving family for practising differently. For your own situation, please consult a trusted local scholar rather than deciding the boundaries alone.",
+    "Disclaimer: This is general educational guidance, not a personal fatwa. For your own situation, please consult a trusted local scholar. If grief feels overwhelming, or you have thoughts of harming yourself, please reach out right away to someone you trust, your imam, or a professional counsellor.",
+  ],
+  links: [
+    { title: "How Can I Make My Duas More Heartfelt and Meaningful? A Practical Islamic Guide", kind: "qa", idx: 15, href: "#qa" },
+    { title: "Islamic Story About Trust in Allah: The Traveller's Empty Waterskin", kind: "waqiat", idx: 10, href: "#waqiat" },
+  ],
+  showFullBody: true,
+},
 ];
