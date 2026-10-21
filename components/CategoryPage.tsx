@@ -2,7 +2,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ArticleCard from "@/components/ArticleCard";
 import JsonLd from "@/components/JsonLd";
 import Reveal from "@/components/Reveal";
-import { SITE_URL, getAllArticles, getCategory } from "@/lib/site";
+import { SITE_URL, articleUrl, getAllArticles, getCategory } from "@/lib/site";
 
 const H1: Record<string, string> = {
   kids: "Kids Zone — Islamic Stories for Kids",
@@ -25,9 +25,23 @@ export default function CategoryPage({ dir }: { dir: string }) {
     ],
   };
 
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${category.name} — ${category.blurb}`,
+    numberOfItems: entries.length,
+    itemListElement: entries.map((e, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: articleUrl(e),
+      name: e.article.title,
+    })),
+  };
+
   return (
     <div className="wrap">
       <JsonLd data={breadcrumbJsonLd} />
+      <JsonLd data={itemListJsonLd} />
       <Reveal>
         <div className="page-head">
           <Breadcrumbs
@@ -45,7 +59,7 @@ export default function CategoryPage({ dir }: { dir: string }) {
           <ul className="cards">
             {entries.map((entry) => (
               <li key={entry.slug}>
-                <ArticleCard entry={entry} />
+                <ArticleCard entry={entry} headingAs="h2" />
               </li>
             ))}
           </ul>

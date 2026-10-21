@@ -2,6 +2,13 @@ import { Article, kidsStories, waqiat, qaItems } from "@/data/articles";
 
 export const SITE_URL = "https://islamic-noor-wesbite.vercel.app";
 export const SITE_NAME = "Noor Islamic Website";
+export const OG_IMAGE_URL = `${SITE_URL}/og-image.png`;
+export const OG_IMAGE = {
+  url: OG_IMAGE_URL,
+  width: 1200,
+  height: 630,
+  alt: "Noor Islamic Website — Islamic stories for kids and everyday answers for Muslim families",
+};
 export const YOUTUBE_URL = "https://youtube.com/@arhamasif22_official";
 
 export interface Category {

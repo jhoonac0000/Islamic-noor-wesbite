@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import Reveal from "@/components/Reveal";
 import {
+  OG_IMAGE_URL,
   SITE_NAME,
   SITE_URL,
   articleDescription,
@@ -19,6 +20,51 @@ const KIND_TO_DIR: Record<string, string> = {
   waqiat: "stories",
   qa: "everyday",
 };
+
+type Entries = ReturnType<typeof getAllArticles>;
+
+/**
+ * Some article bodies embed related-article anchors as raw HTML strings
+ * (<a … data-related-kind="kids" data-related-idx="6">Label</a>). Render
+ * those as real internal links (same kind+idx mapping as the related
+ * section) instead of showing readers escaped markup. All other text is
+ * passed through untouched.
+ */
+const ANCHOR_RE =
+  /<a\s+[^>]*data-related-kind="([^"]+)"[^>]*data-related-idx="(\d+)"[^>]*>(.*?)<\/a>/g;
+
+function renderParagraph(
+  text: string,
+  byDir: Map<string, Entries>
+): React.ReactNode {
+  if (!text.includes("data-related")) return text;
+  const parts: React.ReactNode[] = [];
+  let last = 0;
+  let key = 0;
+  for (const m of text.matchAll(ANCHOR_RE)) {
+    const [full, kind, idxStr, label] = m;
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    const targetDir = KIND_TO_DIR[kind];
+    const target = targetDir
+      ? byDir.get(targetDir)?.[Number(idxStr)]
+      : undefined;
+    if (target) {
+      parts.push(
+        <Link
+          key={key++}
+          href={`/${target.category.dir}/${target.slug}`}
+        >
+          {label}
+        </Link>
+      );
+    } else {
+      parts.push(label);
+    }
+    last = m.index + full.length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts;
+}
 
 export default function ArticleView({
   dir,
@@ -72,15 +118,24 @@ export default function ArticleView({
     }
   }
 
+  const published = (article as { date?: string }).date;
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: articleTitle(article),
     description: articleDescription(article),
-    author: { "@type": "Organization", name: SITE_NAME },
-    publisher: { "@type": "Organization", name: SITE_NAME },
+    image: [OG_IMAGE_URL],
+    articleSection: category.name,
+    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.svg` },
+    },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     inLanguage: "en",
+    ...(published ? { datePublished: published } : {}),
   };
 
   const breadcrumbJsonLd = {
@@ -124,7 +179,7 @@ export default function ArticleView({
         {article.asked && <p className="article-meta">{article.asked}</p>}
         {article.body.map((para, i) => (
           <p key={i} className={i === 0 ? "lede-para" : undefined}>
-            {para}
+            {renderParagraph(para, byDir)}
           </p>
         ))}
         {article.moral && (

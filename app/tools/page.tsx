@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import Reveal from "@/components/Reveal";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Free Islamic Tools: Prayer Times, Qibla & Zakat | Noor",
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     "Free Islamic tools: accurate prayer times by location, Qibla compass, Hijri calendar and zakat calculator. 100% private — everything runs in your browser.",
   alternates: { canonical: `${SITE_URL}/tools` },
   openGraph: {
+    images: [OG_IMAGE],
     type: "website",
     url: `${SITE_URL}/tools`,
     title: "Free Islamic Tools: Prayer Times, Qibla & Zakat | Noor",

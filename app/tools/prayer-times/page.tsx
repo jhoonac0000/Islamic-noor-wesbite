@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ToolPageShell from "@/components/tools/ToolPageShell";
 import PrayerTimesTool from "@/components/tools/PrayerTimesTool";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Prayer Times by Location — Daily Schedule | Noor",
@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Accurate daily prayer times (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha) for your location, with a live countdown to the next prayer. Free, private, no sign-up.",
   alternates: { canonical: `${SITE_URL}/tools/prayer-times` },
   openGraph: {
+    images: [OG_IMAGE],
     type: "website",
     url: `${SITE_URL}/tools/prayer-times`,
     title: "Prayer Times by Location — Daily Schedule | Noor",

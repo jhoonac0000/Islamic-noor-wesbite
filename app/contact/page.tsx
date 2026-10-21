@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Noor Islamic Website",
@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "Contact Noor Islamic Website: send a salam, a suggestion, a correction, or a question for our Everyday Issues column via our Facebook page.",
   alternates: { canonical: `${SITE_URL}/contact` },
   openGraph: {
+    images: [OG_IMAGE],
     type: "website",
     url: `${SITE_URL}/contact`,
     title: "Contact Noor Islamic Website",

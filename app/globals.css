@@ -308,6 +308,42 @@ a:hover {
   box-shadow: none;
 }
 
+.btn-ghost-dark {
+  background: transparent;
+  color: var(--emerald-900);
+  border: 2px solid var(--emerald-700);
+  box-shadow: none;
+}
+
+.btn-ghost-dark:hover {
+  background: var(--emerald-50);
+  color: var(--emerald-900);
+  box-shadow: none;
+}
+
+/* Hero trust chips */
+.hero-chips {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.55rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: rise-in 0.9s var(--ease-out) 0.5s forwards;
+}
+
+.hero-chips span {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--gold-100);
+  border: 1px solid rgba(201, 162, 39, 0.45);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+  padding: 0.32rem 0.85rem;
+}
+
 /* ---------- YouTube ---------- */
 .nav-yt {
   display: inline-flex;
@@ -479,6 +515,8 @@ a:hover {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -488,6 +526,30 @@ a:hover {
     transform 0.35s var(--ease-out),
     box-shadow 0.35s var(--ease-out),
     border-color 0.35s var(--ease-out);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-500), var(--gold-300));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Whole card is clickable through its title link */
+.card-title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .card:hover {
@@ -620,7 +682,19 @@ a:hover {
 }
 
 .article-body p {
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.3rem;
+  font-size: 1.09rem;
+  line-height: 1.85;
+}
+
+.article-body p.article-meta {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.article-body p.source-note {
+  font-size: 0.92rem;
+  line-height: 1.65;
 }
 
 .article-body .lede-para::first-letter {
@@ -687,6 +761,49 @@ a:hover {
   flex-wrap: wrap;
   font-family: var(--sans);
   font-weight: 600;
+}
+
+/* ---------- 404 ---------- */
+.not-found {
+  text-align: center;
+  padding: 3.2rem 0 3.6rem;
+}
+
+.not-found .page-ornament {
+  justify-content: center;
+}
+
+.not-found-code {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.4rem 0 0.6rem;
+  color: var(--emerald-100);
+  -webkit-text-stroke: 2px var(--gold-500);
+  letter-spacing: 0.04em;
+}
+
+.not-found h1 {
+  font-size: 2rem;
+  line-height: 1.28;
+  color: var(--emerald-900);
+  margin: 0 0 0.8rem;
+  text-wrap: balance;
+}
+
+.not-found .lede {
+  color: var(--muted);
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+.not-found-cta {
+  opacity: 1;
+  animation: none;
+}
+
+.not-found-links {
+  justify-content: center;
 }
 
 /* ---------- Static content pages ---------- */
@@ -1277,6 +1394,36 @@ a:hover {
   margin: 0;
 }
 
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.55rem;
+  }
+
+  .main-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
+    padding-bottom: 0.35rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-nav a {
+    white-space: nowrap;
+  }
+
+  .not-found-code {
+    font-size: 4rem;
+  }
+}
+
 /* ---------- Larger screens ---------- */
 @media (min-width: 640px) {
   .cards {
@@ -1333,7 +1480,8 @@ a:hover {
   .hero .kicker,
   .hero h1,
   .hero .lede,
-  .hero .hero-cta {
+  .hero .hero-cta,
+  .hero-chips {
     opacity: 1 !important;
     transform: none !important;
   }

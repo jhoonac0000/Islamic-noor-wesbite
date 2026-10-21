@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Noor Islamic Website",
@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "Privacy Policy of Noor Islamic Website: a simple static site with no accounts, no cookies, and no data collection. Read how your privacy is protected.",
   alternates: { canonical: `${SITE_URL}/privacy` },
   openGraph: {
+    images: [OG_IMAGE],
     type: "website",
     url: `${SITE_URL}/privacy`,
     title: "Privacy Policy | Noor Islamic Website",

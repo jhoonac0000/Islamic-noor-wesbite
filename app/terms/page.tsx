@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import StaticPage from "@/components/StaticPage";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use | Noor Islamic Website",
@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "Terms of Use for Noor Islamic Website: our stories are for inspiration and learning, not religious rulings. Read the simple terms before using the site.",
   alternates: { canonical: `${SITE_URL}/terms` },
   openGraph: {
+    images: [OG_IMAGE],
     type: "website",
     url: `${SITE_URL}/terms`,
     title: "Terms of Use | Noor Islamic Website",

@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { OG_IMAGE, SITE_NAME, SITE_URL, YOUTUBE_URL } from "@/lib/site";
 import "./globals.css";
+
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61595512130088";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -19,6 +22,12 @@ export const metadata: Metadata = {
     description:
       "Original Islamic stories for kids and thoughtful answers to everyday questions for Muslim families.",
     url: SITE_URL,
+    images: [OG_IMAGE],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [OG_IMAGE.url],
   },
   robots: {
     index: true,
@@ -32,6 +41,18 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#0b3d2e",
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/icon.svg`,
+  description:
+    "An independent Islamic website publishing original stories for kids and thoughtful answers to everyday questions for Muslim families in simple English.",
+  sameAs: [YOUTUBE_URL, FACEBOOK_URL],
 };
 
 export default function RootLayout({
@@ -42,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <JsonLd data={organizationJsonLd} />
         <Header />
         <main>{children}</main>
         <Footer />

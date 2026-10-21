@@ -4,6 +4,7 @@ import ArticleCard from "@/components/ArticleCard";
 import JsonLd from "@/components/JsonLd";
 import Reveal from "@/components/Reveal";
 import {
+  OG_IMAGE,
   CATEGORIES,
   HOME_FAQS,
   SITE_NAME,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Noor Islamic Website: original Islamic stories for kids and thoughtful answers to everyday questions for Muslim families. Free, simple English.",
   alternates: { canonical: SITE_URL },
   openGraph: {
+    images: [OG_IMAGE],
     type: "website",
     url: SITE_URL,
     title: "Islamic Stories for Kids & Everyday Answers | Noor",
@@ -79,6 +81,11 @@ export default function HomePage() {
             <Link href="/everyday" className="btn btn-ghost">
               Everyday Answers
             </Link>
+          </div>
+          <div className="hero-chips">
+            <span>✦ {all.length} Original Stories &amp; Answers</span>
+            <span>✦ 4 Free Islamic Tools</span>
+            <span>✦ Always Free — No Sign-Up</span>
           </div>
         </div>
       </section>

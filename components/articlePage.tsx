@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import {
+  OG_IMAGE,
   SITE_NAME,
-  SITE_URL,
   articleDescription,
   articleTitle,
   articleUrl,
@@ -26,6 +26,11 @@ export function generateArticleMetadata(
   const url = articleUrl(entry);
   const title = articleTitle(entry.article);
   const description = articleDescription(entry.article);
+  // seoTitle already ends with "| Noor" — build the social title from the
+  // bare headline so the brand is not doubled ("… | Noor | Noor Islamic Website").
+  const socialTitle = `${title.replace(/\s*\|\s*Noor$/, "")} | ${SITE_NAME}`;
+  // Articles carry no publish date in the data today; use one only if present.
+  const published = (entry.article as { date?: string }).date;
   return {
     title,
     description,
@@ -33,9 +38,19 @@ export function generateArticleMetadata(
     openGraph: {
       type: "article",
       url,
-      title: `${title} | ${SITE_NAME}`,
+      title: socialTitle,
       description,
       siteName: SITE_NAME,
+      images: [OG_IMAGE],
+      ...(published
+        ? { publishedTime: published, section: category.name }
+        : { section: category.name }),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: socialTitle,
+      description,
+      images: [OG_IMAGE.url],
     },
   };
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ToolPageShell from "@/components/tools/ToolPageShell";
 import HijriTool from "@/components/tools/HijriTool";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Hijri Calendar — Today's Islamic Date | Noor",
@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "See today's Hijri date and browse the Islamic calendar month by month, from Muharram to Dhu al-Hijjah. Free, private, no sign-up.",
   alternates: { canonical: `${SITE_URL}/tools/hijri-calendar` },
   openGraph: {
+    images: [OG_IMAGE],
     type: "website",
     url: `${SITE_URL}/tools/hijri-calendar`,
     title: "Hijri Calendar — Today's Islamic Date | Noor",

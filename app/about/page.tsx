@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import StaticPage from "@/components/StaticPage";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Noor Islamic Website",
@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "About Noor: an independent Islamic website publishing original stories for kids and thoughtful answers for Muslim families in simple English.",
   alternates: { canonical: `${SITE_URL}/about` },
   openGraph: {
+    images: [OG_IMAGE],
     type: "website",
     url: `${SITE_URL}/about`,
     title: "About Noor Islamic Website",
