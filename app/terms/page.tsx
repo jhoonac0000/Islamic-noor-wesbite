@@ -21,7 +21,7 @@ export default function TermsPage() {
   return (
     <StaticPage title="Terms of Use" path="/terms">
       <p>
-        <strong>Last updated:</strong> 13 October 2026
+        <strong>Last updated:</strong> 22 October 2026
       </p>
       <h2>1. Purpose</h2>
       <p>
@@ -50,6 +50,20 @@ export default function TermsPage() {
       <p>
         We may occasionally link to outside websites. We are not responsible
         for their content or privacy practices.
+      </p>
+      <h2>6. Our tools</h2>
+      <p>
+        Our free tools (Prayer Times, Qibla Compass, Hijri Calendar, Zakat
+        Calculator, and the prayer-times widget) are provided{" "}
+        <strong>as-is</strong>, without any warranty. Prayer times and
+        calendar dates are calculated in good faith using standard methods,
+        but they may differ slightly from your local mosque&apos;s timetable —
+        please follow your local announcements for prayer and fasting times.
+      </p>
+      <h2>7. Contact</h2>
+      <p>
+        Questions about these terms? Email us at{" "}
+        <a href="mailto:jhoonac0000@gmail.com">jhoonac0000@gmail.com</a>.
       </p>
     </StaticPage>
   );

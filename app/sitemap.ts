@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/embed-widget",
     "/about",
     "/contact",
-    "/privacy",
+    "/privacy-policy",
     "/terms",
   ];
 
