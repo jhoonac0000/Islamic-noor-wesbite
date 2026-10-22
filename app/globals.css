@@ -1490,3 +1490,151 @@ a:hover {
     animation: none;
   }
 }
+
+/* ---------- Embeddable prayer-times widget (/widget/prayer-times) ---------- */
+.pw {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 380px;
+  margin: 0 auto;
+  box-shadow: 0 6px 24px rgba(7, 39, 30, 0.08);
+}
+.pw-head {
+  background: linear-gradient(135deg, var(--emerald-900), var(--emerald-700));
+  color: #ffffff;
+  padding: 12px 16px;
+  border-bottom: 3px solid var(--gold-500);
+}
+.pw-title {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.pw-date {
+  font-size: 0.78rem;
+  color: var(--gold-100);
+  margin-top: 3px;
+}
+.pw-body {
+  padding: 12px 16px 14px;
+}
+.pw-select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font: inherit;
+  font-size: 0.9rem;
+  background: var(--emerald-50);
+  color: var(--ink);
+}
+.pw-next {
+  margin: 10px 0 4px;
+  font-size: 0.88rem;
+  background: var(--gold-100);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 7px 10px;
+  text-align: center;
+}
+.pw-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.pw-table th,
+.pw-table td {
+  padding: 6px 4px;
+  text-align: left;
+  font-weight: 500;
+}
+.pw-table td {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.pw-table tr + tr {
+  border-top: 1px solid var(--line);
+}
+.pw-table tr.pw-row-next {
+  background: var(--emerald-50);
+  color: var(--emerald-900);
+}
+.pw-table tr.pw-row-next th,
+.pw-table tr.pw-row-next td {
+  font-weight: 700;
+}
+.pw-badge {
+  background: var(--gold-500);
+  color: var(--emerald-950);
+  font-size: 0.62rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 2px 7px;
+  margin-left: 6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pw-asr {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.pw-asr button {
+  font: inherit;
+  font-size: 0.8rem;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 3px 11px;
+  cursor: pointer;
+}
+.pw-asr button[aria-pressed="true"] {
+  background: var(--emerald-900);
+  color: #ffffff;
+  border-color: var(--emerald-900);
+}
+.pw-foot {
+  border-top: 1px solid var(--line);
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 0.8rem;
+  background: var(--paper);
+  color: var(--muted);
+}
+.pw-foot a {
+  color: var(--emerald-700);
+  text-decoration: none;
+  font-weight: 700;
+}
+.pw-foot a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Embed-widget page helpers ---------- */
+.embed-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  background: var(--emerald-950);
+  color: var(--gold-100);
+  border-radius: 10px;
+  padding: 12px 14px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin: 0 0 12px;
+}
+.embed-preview {
+  display: flex;
+  justify-content: center;
+  padding: 6px 0 2px;
+}

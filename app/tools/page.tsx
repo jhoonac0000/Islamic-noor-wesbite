@@ -43,6 +43,13 @@ const TOOLS = [
       "See today's Islamic date and browse the Hijri month calendar — Muharram to Dhu al-Hijjah.",
   },
   {
+    href: "/tools/embed-widget",
+    badge: "For Websites",
+    title: "Embed Our Widget",
+    summary:
+      "Run a mosque, school or blog website? Add our free prayer-times widget to your own site with one copy-paste snippet.",
+  },
+  {
     href: "/tools/zakat-calculator",
     badge: "Calculator",
     title: "Zakat Calculator",

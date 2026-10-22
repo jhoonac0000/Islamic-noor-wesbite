@@ -29,6 +29,9 @@ const PRESETS: { name: string; lat: number; lng: number }[] = [
   { name: "New York, USA", lat: 40.7128, lng: -74.006 },
 ];
 
+/** Preset cities, shared with the embeddable prayer-times widget. */
+export const CITY_PRESETS = PRESETS;
+
 /** Haversine distance in km between two coordinates. */
 function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number) {
   const R = 6371;

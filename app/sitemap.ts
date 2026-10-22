@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/qibla-compass",
     "/tools/hijri-calendar",
     "/tools/zakat-calculator",
+    "/tools/embed-widget",
     "/about",
     "/contact",
     "/privacy",
