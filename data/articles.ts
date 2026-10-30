@@ -39,7 +39,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Bilal and the Cracked Jug",
-  seoTitle: "Islamic Story for Kids About Honesty | Noor",
+  seoTitle: "Bilal and the Cracked Jug: Islamic Kids Story About Honesty | Noor",
   seoDescription: "Read a gentle Islamic story for kids about honesty — when Bilal breaks his grandmother’s favourite jug, he learns why telling the truth quickly heals the heart.",
   lesson: "Honesty",
   ages: "Ages 5–9",
@@ -150,7 +150,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Kindness to Animals: The Thirsty Cat",
-  seoTitle: "Islamic Story for Kids About Kindness to Animals | Noor",
+  seoTitle: "The Thirsty Cat: Islamic Kids Story About Kindness to Animals | Noor",
   seoDescription: "Read an Islamic story for kids about kindness to animals — Sami finds a thirsty cat on a hot afternoon and learns gentle care pleases Allah.",
   lesson: "Kindness",
   ages: "Ages 4–8",
@@ -380,7 +380,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Kindness to Animals: The Grey Stray",
-  seoTitle: "Islamic Story for Kids About Kindness to Animals | Noor",
+  seoTitle: "The Grey Stray: Islamic Kids Story About Kindness to Animals | Noor",
   seoDescription: "Read a gentle Islamic story for kids about kindness to animals — Ahmed finds a hurt stray cat in the bushes and learns that no kindness is too small.",
   slug: "kindness-animals-grey-stray",
   lesson: "Kindness",
@@ -436,7 +436,7 @@ export const kidsStories: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story for Kids About Honesty: The Lost Wallet",
-  seoTitle: "Islamic Story for Kids About Honesty | Noor",
+  seoTitle: "Islamic Story for Kids About Honesty: The Lost Wallet | Noor",
   seoDescription: "A gentle Islamic story for kids about honesty: Ali finds a heavy brown wallet on the school bus and faces the hardest honest choice of his life.",
   slug: "honesty-lost-wallet",
   lesson: "Honesty",

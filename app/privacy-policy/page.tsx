@@ -5,7 +5,7 @@ import { OG_IMAGE, SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy | Noor Islamic Website",
   description:
-    "Privacy Policy of Noor Islamic Website: a static site with no accounts, no login, and no database. Our tools run entirely in your browser. Read how your privacy is protected.",
+    "Privacy Policy of Noor Islamic Website: a static site with no accounts, no login, and no database. Our tools run entirely in your browser.",
   alternates: { canonical: `${SITE_URL}/privacy-policy` },
   openGraph: {
     images: [OG_IMAGE],
