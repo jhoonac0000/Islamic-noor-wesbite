@@ -144,6 +144,27 @@ export default function ArticleView({
     ...(published ? { datePublished: published } : {}),
   };
 
+  // GEO: emit FAQPage schema when the body carries Q:/A: paragraphs,
+  // so AI search engines can quote the answers directly.
+  const faqItems = article.body
+    .filter((p) => p.startsWith("Q: ") && p.includes(" A: "))
+    .map((p) => {
+      const idx = p.indexOf(" A: ");
+      return { q: p.slice(3, idx).trim(), a: p.slice(idx + 4).trim() };
+    });
+  const faqJsonLd =
+    faqItems.length >= 3
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqItems.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -163,6 +184,7 @@ export default function ArticleView({
     <div className="wrap">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <Reveal>
         <div className="page-head">
           <Breadcrumbs
