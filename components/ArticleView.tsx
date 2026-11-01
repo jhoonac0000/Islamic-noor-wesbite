@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -124,7 +125,12 @@ export default function ArticleView({
     "@type": "Article",
     headline: articleTitle(article),
     description: articleDescription(article),
-    image: [OG_IMAGE_URL],
+    image: article.image
+      ? [
+          `${SITE_URL}${article.image}`,
+          ...(article.bodyImages ?? []).map((bi) => `${SITE_URL}${bi.src}`),
+        ]
+      : [OG_IMAGE_URL],
     articleSection: category.name,
     author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
     publisher: {
@@ -177,10 +183,42 @@ export default function ArticleView({
           <p className="article-meta">{metaBits.join(" · ")}</p>
         )}
         {article.asked && <p className="article-meta">{article.asked}</p>}
+        {article.image && (
+          <figure className="article-hero">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={article.image}
+              alt={article.imageAlt ?? article.title}
+              width={1200}
+              height={675}
+              loading="lazy"
+            />
+            {article.imageCaption && (
+              <figcaption>{article.imageCaption}</figcaption>
+            )}
+          </figure>
+        )}
         {article.body.map((para, i) => (
-          <p key={i} className={i === 0 ? "lede-para" : undefined}>
-            {renderParagraph(para, byDir)}
-          </p>
+          <Fragment key={i}>
+            <p className={i === 0 ? "lede-para" : undefined}>
+              {renderParagraph(para, byDir)}
+            </p>
+            {(article.bodyImages ?? [])
+              .filter((bi) => bi.after === i)
+              .map((bi, j) => (
+                <figure className="article-hero" key={`bi-${i}-${j}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={bi.src}
+                    alt={bi.alt}
+                    width={1200}
+                    height={675}
+                    loading="lazy"
+                  />
+                  {bi.caption && <figcaption>{bi.caption}</figcaption>}
+                </figure>
+              ))}
+          </Fragment>
         ))}
         {article.moral && (
           <Reveal>

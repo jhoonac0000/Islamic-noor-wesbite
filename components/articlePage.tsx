@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {
   OG_IMAGE,
   SITE_NAME,
+  SITE_URL,
   articleDescription,
   articleTitle,
   articleUrl,
@@ -31,6 +32,14 @@ export function generateArticleMetadata(
   const socialTitle = `${title.replace(/\s*\|\s*Noor$/, "")} | ${SITE_NAME}`;
   // Articles carry no publish date in the data today; use one only if present.
   const published = (entry.article as { date?: string }).date;
+  const ogImage = entry.article.image
+    ? {
+        url: `${SITE_URL}${entry.article.image}`,
+        width: 1200,
+        height: 675,
+        alt: entry.article.imageAlt ?? title,
+      }
+    : OG_IMAGE;
   return {
     title,
     description,
@@ -41,7 +50,7 @@ export function generateArticleMetadata(
       title: socialTitle,
       description,
       siteName: SITE_NAME,
-      images: [OG_IMAGE],
+      images: [ogImage],
       ...(published
         ? { publishedTime: published, section: category.name }
         : { section: category.name }),
@@ -50,7 +59,7 @@ export function generateArticleMetadata(
       card: "summary_large_image",
       title: socialTitle,
       description,
-      images: [OG_IMAGE.url],
+      images: [ogImage.url],
     },
   };
 }

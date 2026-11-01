@@ -14,6 +14,17 @@ export default function ArticleCard({
   const Heading = headingAs;
   return (
     <article className="card">
+      {article.image && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className="card-thumb"
+          src={article.image}
+          alt={article.imageAlt ?? ""}
+          width={1200}
+          height={675}
+          loading="lazy"
+        />
+      )}
       <span className="card-badge">{category.name}</span>
       <Heading className="card-title">
         <Link href={`/${category.dir}/${slug}`}>{article.title}</Link>
