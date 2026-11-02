@@ -1452,6 +1452,17 @@ a:hover {
 
   .main-nav a {
     white-space: nowrap;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .main-nav a::after {
+    bottom: 0.55rem;
+  }
+
+  .site-footer a {
+    display: inline-block;
+    padding: 0.45rem 0;
   }
 
   .not-found-code {
