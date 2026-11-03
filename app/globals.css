@@ -1438,12 +1438,10 @@ a:hover {
   }
 
   .main-nav {
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    overflow-x: visible;
     max-width: 100%;
     padding-bottom: 0.35rem;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
   }
 
   .main-nav::-webkit-scrollbar {
