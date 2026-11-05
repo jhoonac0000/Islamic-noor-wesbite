@@ -107,7 +107,26 @@ export default function ArticleView({
       if (related.length >= 3) break;
     }
   }
-  for (const e of byDir.get(dir) ?? []) {
+  // Fill any remaining related slots with the article's nearest
+  // neighbours in the same category (next, previous, then outward,
+  // wrapping around) so every article links to — and is linked from —
+  // its closest companions, instead of the same first few articles in
+  // the category receiving nearly all internal links.
+  const siblings = byDir.get(dir) ?? [];
+  const siblingCount = siblings.length;
+  const selfIdx = Math.max(
+    0,
+    siblings.findIndex((e) => e.slug === slug)
+  );
+  const fillOrder: typeof siblings = [];
+  for (let step = 1; step < siblingCount; step++) {
+    const fwd = siblings[(selfIdx + step) % siblingCount];
+    if (fwd && !fillOrder.includes(fwd)) fillOrder.push(fwd);
+    const back =
+      siblings[(((selfIdx - step) % siblingCount) + siblingCount) % siblingCount];
+    if (back && !fillOrder.includes(back)) fillOrder.push(back);
+  }
+  for (const e of fillOrder) {
     if (related.length >= 3) break;
     const key = `${e.category.dir}/${e.slug}`;
     if (!used.has(key)) {

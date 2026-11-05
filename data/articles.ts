@@ -2,6 +2,7 @@
 export interface ArticleLink { title: string; kind: string; idx: number; href?: string }
 export interface Article {
   title: string;
+  date?: string;
   seoTitle?: string;
   seoDescription?: string;
   slug?: string;
@@ -25,6 +26,10 @@ export interface Article {
 export const kidsStories: Article[] = [
 {
   title: "Islamic Story for Kids About Keeping Promises: The Last Piece of Cake",
+  date: "2026-10-10",
+  links: [
+    { title: "Islamic Story for Kids About Thankfulness for Rain: The Rain That Came at Last", kind: "kids", idx: 26, href: "#kids" },
+  ],
   seoTitle: "Islamic Story for Kids About Keeping Promises | Noor",
   seoDescription: "Read a gentle Islamic story for kids about keeping promises, sharing, and choosing kindness when nobody is watching.",
   lesson: "Kindness",
@@ -43,6 +48,10 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Bilal and the Cracked Jug",
+  date: "2026-10-10",
+  links: [
+    { title: "Islamic Story for Kids About Responsibility: The Tidy Room", kind: "kids", idx: 23, href: "#kids" },
+  ],
   seoTitle: "Bilal and the Cracked Jug: Islamic Kids Story About Honesty | Noor",
   seoDescription: "Read a gentle Islamic story for kids about honesty — when Bilal breaks his grandmother’s favourite jug, he learns why telling the truth quickly heals the heart.",
   lesson: "Honesty",
@@ -60,6 +69,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "The Smallest Gift",
+  date: "2026-10-10",
   seoTitle: "Islamic Story for Kids About Giving Charity | Noor",
   seoDescription: "Read a sweet Islamic story for kids about giving charity — little Hamza has only a button and a pebble, yet discovers the smallest gift can be the biggest.",
   lesson: "Kindness",
@@ -77,6 +87,11 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Maryam and the Long Day",
+  date: "2026-10-10",
+  links: [
+    { title: "Islamic Story for Kids About Waiting Your Turn: The Playground Line", kind: "kids", idx: 29, href: "#kids" },
+    { title: "Islamic Story for Kids About Patience with a Younger Sibling: The Slow Tower", kind: "kids", idx: 31, href: "#kids" },
+  ],
   seoTitle: "Islamic Story for Kids About Fasting With Patience | Noor",
   seoDescription: "Read an Islamic story for kids about patience while fasting — Maryam’s first fast feels endless, until she learns what truly fills the heart.",
   lesson: "Patience",
@@ -94,6 +109,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "The Lemon Tree",
+  date: "2026-10-10",
   seoTitle: "Islamic Story for Kids About Hard Work | Noor",
   seoDescription: "Read an Islamic story for kids about hard work and patience — Yusuf plants one lemon seed and learns why good things grow slowly.",
   lesson: "Hard work",
@@ -111,6 +127,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "A Chair for Layla",
+  date: "2026-10-10",
   seoTitle: "Islamic Story for Kids About Friendship | Noor",
   seoDescription: "Read a heartwarming Islamic story for kids about friendship — Noor sees a new girl eating lunch alone and learns one small kindness changes everything.",
   lesson: "Friendship",
@@ -128,6 +145,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Gratitude: The Warm Jacket",
+  date: "2026-10-10",
   seoTitle: "Islamic Story for Kids About Gratitude | Noor",
   seoDescription: "Read an Islamic story for kids about gratitude — a warm jacket reminds us to notice Allah’s blessings and say Alhamdulillah with a happy heart.",
   lesson: "Kindness",
@@ -149,11 +167,13 @@ export const kidsStories: Article[] = [
   links: [
     { title: "The Smallest Gift", kind: "kids", idx: 2, href: "#kids" },
     { title: "The Shopkeeper Who Would Not Lie", kind: "waqiat", idx: 0, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Saying Sorry: The Spilled Paint", kind: "kids", idx: 24, href: "#kids" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story for Kids About Kindness to Animals: The Thirsty Cat",
+  date: "2026-10-10",
   seoTitle: "The Thirsty Cat: Islamic Kids Story About Kindness to Animals | Noor",
   seoDescription: "Read an Islamic story for kids about kindness to animals — Sami finds a thirsty cat on a hot afternoon and learns gentle care pleases Allah.",
   lesson: "Kindness",
@@ -175,11 +195,13 @@ export const kidsStories: Article[] = [
   links: [
     { title: "Islamic Story for Kids About Gratitude: The Warm Jacket", kind: "kids", idx: 6, href: "#kids" },
     { title: "Islamic Story About Trust and Amanat: The Baker Who Kept the Key", kind: "waqiat", idx: 3, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Kindness to Animals: The Grey Stray", kind: "kids", idx: 15, href: "#kids" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story for Kids About Respecting Parents: The Warm Shoes",
+  date: "2026-10-12",
   seoTitle: "Islamic Story for Kids About Respecting Parents | Noor",
   seoDescription: "Read an Islamic story for kids about respecting parents — seven-year-old Ahmed learns two small acts of kindness are among the dearest deeds to Allah.",
   lesson: "Respect for parents",
@@ -204,11 +226,13 @@ export const kidsStories: Article[] = [
   links: [
     { title: "Islamic Story for Kids About Gratitude: The Warm Jacket", kind: "kids", idx: 6, href: "#kids" },
     { title: "Islamic Story About Keeping Promises: The Merchant's Word", kind: "waqiat", idx: 4, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Gratitude for Parents: The Morning Tea", kind: "kids", idx: 13, href: "#kids" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story for Kids About Cleanliness: The Clean Little Hands",
+  date: "2026-10-13",
   seoTitle: "Islamic Story for Kids About Cleanliness: The Clean Little Hands",
   seoDescription: "A warm Islamic story for kids about cleanliness: little Bilal learns why clean hands matter in Islam, before food, prayer and play. Simple lesson for children.",
   slug: "clean-little-hands",
@@ -240,11 +264,13 @@ export const kidsStories: Article[] = [
   links: [
     { title: "Islamic Story for Kids About Respecting Parents: The Warm Shoes", kind: "kids", idx: 8, href: "#kids" },
     { title: "The Farmer Who Planted in a Storm", kind: "waqiat", idx: 5, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Helping at Home: The Little Helper", kind: "kids", idx: 27, href: "#kids" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story for Kids About Prayer Habit: The Five Golden Coins",
+  date: "2026-10-14",
   seoTitle: "Islamic Story for Kids About Prayer Habit | Noor",
   seoDescription: "A gentle Islamic story for kids about building the five-daily-prayer habit: Adam, an empty jar, and five golden coins every morning.",
   slug: "prayer-habit-five-golden-coins",
@@ -273,6 +299,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Sharing: The Two Red Apples",
+  date: "2026-10-15",
   seoTitle: "Islamic Story for Kids About Sharing with Siblings | Noor",
   seoDescription: "A gentle Islamic story for kids about sharing with siblings — Zara gets two shiny red apples and learns the sweetest bite is the one you share.",
   slug: "sharing-siblings-two-red-apples",
@@ -302,6 +329,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Patience: The Green Mango",
+  date: "2026-10-16",
   seoTitle: "Islamic Story for Kids About Patience | Noor",
   seoDescription: "A gentle Islamic story for kids about patience — Sara counts her grandfather's green mangoes every morning and learns why good things cannot be rushed.",
   slug: "patience-green-mango",
@@ -324,11 +352,13 @@ export const kidsStories: Article[] = [
   links: [
     { title: "Maryam and the Long Day", kind: "kids", idx: 3, href: "#kids" },
     { title: "The Farmer Who Planted in a Storm", kind: "waqiat", idx: 5, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Patience with a Younger Sibling: The Slow Tower", kind: "kids", idx: 31, href: "#kids" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story for Kids About Gratitude for Parents: The Morning Tea",
+  date: "2026-10-17",
   seoTitle: "Islamic Story for Kids About Gratitude for Parents | Noor",
   seoDescription: "A sweet Islamic story for kids about gratitude for parents — Zaid wakes up early one morning and finally sees everything his parents do for him.",
   slug: "gratitude-for-parents-morning-tea",
@@ -356,6 +386,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Forgiveness: The Torn Kite",
+  date: "2026-10-18",
   seoTitle: "Islamic Story for Kids About Forgiveness | Noor",
   seoDescription: "Read a gentle Islamic story for kids about forgiveness — Zara's brand-new kite tears on its first flight, and she learns why forgiving feels better than staying angry.",
   slug: "forgiveness-torn-kite",
@@ -384,6 +415,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Kindness to Animals: The Grey Stray",
+  date: "2026-10-19",
   seoTitle: "The Grey Stray: Islamic Kids Story About Kindness to Animals | Noor",
   seoDescription: "Read a gentle Islamic story for kids about kindness to animals — Ahmed finds a hurt stray cat in the bushes and learns that no kindness is too small.",
   slug: "kindness-animals-grey-stray",
@@ -413,6 +445,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Generosity: The Red Toy Truck",
+  date: "2026-10-20",
   seoTitle: "Islamic Story for Kids About Generosity | Noor",
   seoDescription: "Read a gentle Islamic story for kids about generosity — Ahmed saves for weeks for a red toy truck, then faces the hardest sharing choice of his life.",
   slug: "generosity-red-toy-truck",
@@ -442,6 +475,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Honesty: The Lost Wallet",
+  date: "2026-10-21",
   seoTitle: "Islamic Story for Kids About Honesty: The Lost Wallet | Noor",
   seoDescription: "A gentle Islamic story for kids about honesty: Ali finds a heavy brown wallet on the school bus and faces the hardest honest choice of his life.",
   slug: "honesty-lost-wallet",
@@ -471,6 +505,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Not Wasting Food: The Clean Plate",
+  date: "2026-10-22",
   seoTitle: "Islamic Story for Kids About Not Wasting Food | Noor",
   seoDescription: "A gentle Islamic story for kids about not wasting food: Hassan learns his grandfather's small rule — take a little, finish it all — and becomes a champion of the clean plate.",
   slug: "no-wasting-food-clean-plate",
@@ -494,11 +529,13 @@ export const kidsStories: Article[] = [
   links: [
     { title: "Islamic Story for Kids About Sharing: The Two Red Apples", kind: "kids", idx: 11, href: "#kids" },
     { title: "Islamic Story About Kindness to Neighbours: The Extra Plate of Food", kind: "waqiat", idx: 6, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Cleanliness: The Clean Little Hands", kind: "kids", idx: 9, href: "#kids" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story for Kids About Helping Elders: The Heavy Shopping Bags",
+  date: "2026-10-23",
   seoTitle: "Islamic Story for Kids About Helping Elders | Noor",
   seoDescription: "A gentle Islamic story for kids about helping elders: Mariam helps her old neighbour carry heavy shopping bags — and learns that helping hands make a happy heart.",
   slug: "helping-elders-heavy-shopping-bags",
@@ -527,6 +564,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Truthfulness: The Broken Window",
+  date: "2026-10-24",
   seoTitle: "Islamic Story for Kids About Truthfulness | Noor",
   seoDescription: "A gentle Islamic story for kids about truthfulness: Hamza breaks a classroom window with his football — and learns that telling the truth is the bravest choice.",
   slug: "truthfulness-broken-classroom-window",
@@ -556,6 +594,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Courage: The Brave Voice",
+  date: "2026-10-25",
   seoTitle: "Islamic Story for Kids About Courage | Noor",
   seoDescription: "A gentle Islamic story for kids about courage: Ayaan finds his brave voice when a new classmate is laughed at — and learns one kind word can change everything.",
   slug: "kids-courage-brave-voice",
@@ -585,6 +624,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Good Manners: The Polite Guest",
+  date: "2026-10-26",
   seoTitle: "Islamic Story for Kids About Good Manners | Noor",
   seoDescription: "A gentle Islamic story for kids about good manners: Ayaan visits his aunty's house and learns that small polite habits are a gift to the host.",
   slug: "kids-good-manners-polite-guest",
@@ -608,11 +648,13 @@ export const kidsStories: Article[] = [
   links: [
     { title: "Islamic Story for Kids About Respecting Parents: The Warm Shoes", kind: "kids", idx: 8, href: "#kids" },
     { title: "Islamic Story About Kindness to Neighbours: The Extra Plate of Food", kind: "waqiat", idx: 6, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Good Manners at the Table: The Shared Bowl", kind: "kids", idx: 28, href: "#kids" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story for Kids About Responsibility: The Tidy Room",
+  date: "2026-10-27",
   seoTitle: "Islamic Story for Kids About Responsibility | Noor",
   seoDescription: "A gentle Islamic story for kids about responsibility: Fatima tidies the living room without being asked and learns that noticing work is the heart of helping.",
   slug: "kids-responsibility-tidy-room",
@@ -641,6 +683,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Saying Sorry: The Spilled Paint",
+  date: "2026-10-28",
   seoTitle: "Islamic Story for Kids About Saying Sorry | Noor",
   seoDescription: "A gentle Islamic story for kids about saying sorry: Zara spills paint on her friend's picture, learns a brave sorry, and helps fix what she spoiled.",
   slug: "kids-saying-sorry-spilled-paint",
@@ -668,6 +711,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Sharing with a New Neighbour: The Welcome Plate",
+  date: "2026-10-29",
   seoTitle: "Islamic Story for Kids About Sharing with a New Neighbour | Noor",
   seoDescription: "A gentle Islamic story for kids about sharing with a new neighbour: Huda welcomes Yusuf's family with a plate of dates and one friendly invitation.",
   slug: "kids-sharing-new-neighbour-welcome-plate",
@@ -689,11 +733,13 @@ export const kidsStories: Article[] = [
   links: [
     { title: "Islamic Story for Kids About Sharing: The Two Red Apples", kind: "kids", idx: 11, href: "#kids" },
     { title: "Islamic Story About Kindness to Neighbours: The Extra Plate of Food", kind: "waqiat", idx: 6, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Helping a New Classmate: The Welcome Card", kind: "kids", idx: 30, href: "#kids" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story for Kids About Thankfulness for Rain: The Rain That Came at Last",
+  date: "2026-10-30",
   seoTitle: "Islamic Story for Kids About Thankfulness for Rain | Noor",
   seoDescription: "A gentle Islamic story for kids about thankfulness for rain: Amina waits patiently through dry days, prays for rain, and learns real gratitude when it comes.",
   slug: "kids-thankfulness-rain-came-at-last",
@@ -731,6 +777,7 @@ export const kidsStories: Article[] = [
 },
 {
   title: "Islamic Story for Kids About Helping at Home: The Little Helper",
+  date: "2026-10-31",
   seoTitle: "Islamic Story for Kids About Helping at Home | Noor",
   seoDescription: "A gentle Islamic story for kids about helping at home: Omar pauses his block tower to help his sister Maryam dress, and learns what teamwork feels like.",
   slug: "kids-helping-at-home-little-helper",
@@ -767,6 +814,7 @@ export const kidsStories: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story for Kids About Good Manners at the Table: The Shared Bowl",
+  date: "2026-11-01",
   seoTitle: "Islamic Story for Kids About Good Manners at the Table | Noor",
   seoDescription: "A gentle Islamic story for kids about good manners at the table: Sara learns to share the bowl fairly, wait her turn, and thank the cook at the family dinner.",
   slug: "kids-good-manners-table-shared-bowl",
@@ -809,6 +857,7 @@ export const kidsStories: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story for Kids About Waiting Your Turn: The Playground Line",
+  date: "2026-11-02",
   seoTitle: "Islamic Story for Kids About Waiting Your Turn | Noor",
   seoDescription: "A gentle Islamic story for kids about waiting your turn: Hamza learns patience in the playground line for the slide, the swing, and a shared snack with friends.",
   slug: "kids-waiting-turn-playground",
@@ -850,6 +899,7 @@ export const kidsStories: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story for Kids About Helping a New Classmate: The Welcome Card",
+  date: "2026-11-03",
   seoTitle: "Islamic Story for Kids About Helping a New Classmate | Noor",
   seoDescription: "A gentle Islamic story for kids about helping a new classmate feel welcome: Layla shows Omar around, invites him to play, and the class makes a welcome card.",
   slug: "kids-new-classmate-welcome",
@@ -887,10 +937,12 @@ export const kidsStories: Article[] = [
   links: [
     { title: "A Chair for Layla", kind: "kids", idx: 5, href: "#kids" },
     { title: "Islamic Story About Kindness to Neighbours: The Extra Plate of Food", kind: "waqiat", idx: 6, href: "#waqiat" },
+    { title: "Islamic Story for Kids About Sharing with a New Neighbour: The Welcome Plate", kind: "kids", idx: 25, href: "#kids" },
   ],
   showFullBody: true,
 },{
   title: "Islamic Story for Kids About Patience with a Younger Sibling: The Slow Tower",
+  date: "2026-11-04",
   seoTitle: "Islamic Story for Kids About Patience with a Younger Sibling | Noor",
   seoDescription: "A gentle Islamic story for kids about patience with a younger sibling: Sana learns to wait kindly while little Yusuf builds, puzzles, and walks slowly.",
   slug: "kids-patience-younger-sibling",
@@ -932,6 +984,7 @@ export const kidsStories: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story for Kids About Comforting a Sad Friend: The Quiet Bench",
+  date: "2026-11-05",
   seoTitle: "Islamic Story for Kids About Comforting a Sad Friend | Noor",
   seoDescription: "A gentle Islamic story for kids about comforting a sad friend: Hana sits beside Sami, listens quietly, shares her snack, and helps his sad day feel lighter.",
   slug: "kids-comforting-sad-friend-quiet-bench",
@@ -976,6 +1029,12 @@ export const kidsStories: Article[] = [
 export const waqiat: Article[] = [
 {
   title: "The Shopkeeper Who Would Not Lie",
+  date: "2026-10-10",
+  links: [
+    { title: "Islamic Story About Forgiving a Debt: The Shopkeeper's Ledger", kind: "waqiat", idx: 23, href: "#waqiat" },
+    { title: "Islamic Story About Honesty in Returning Lost Property: The Found Purse", kind: "waqiat", idx: 25, href: "#waqiat" },
+    { title: "Islamic Story About Keeping a Promise When It Costs You: The Carpenter's Roof", kind: "waqiat", idx: 27, href: "#waqiat" },
+  ],
   seoTitle: "Islamic Story About Honesty: The Shopkeeper | Noor",
   seoDescription: "A cloth merchant finds a hidden tear in his finest fabric — and chooses honesty over fortune. An original Islamic story for kids and families.",
   lesson: "Honesty",
@@ -995,6 +1054,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "The Well of Umm Salim",
+  date: "2026-10-10",
   seoTitle: "Islamic Story About Generosity: Umm Salim's Well | Noor",
   seoDescription: "In a year of drought, a poor widow's well becomes her village's lifeline. An original Islamic story about generosity and trust in Allah.",
   lesson: "Charity",
@@ -1012,6 +1072,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "The Night the Lantern Stayed Lit",
+  date: "2026-10-10",
   seoTitle: "Islamic Story About Perseverance: The Lantern | Noor",
   seoDescription: "A poor orphan sweeps the mosque by day and studies under its lantern by night. An original Islamic story about perseverance.",
   lesson: "Knowledge",
@@ -1029,6 +1090,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Trust and Amanat: The Baker Who Kept the Key",
+  date: "2026-10-10",
   seoTitle: "Islamic Story About Trust (Amanat): The Baker | Noor",
   seoDescription: "What is amanat? A baker guards a neighbour's key — and shows what Islam teaches about trust. An original Islamic story for families.",
   lesson: "Honesty",
@@ -1049,11 +1111,13 @@ export const waqiat: Article[] = [
   links: [
     { title: "The Shopkeeper Who Would Not Lie", kind: "waqiat", idx: 0, href: "#waqiat" },
     { title: "Islamic Story for Kids About Gratitude: The Warm Jacket", kind: "kids", idx: 6, href: "#kids" },
+    { title: "Islamic Story About Honesty in Exams: The Blank Answer", kind: "waqiat", idx: 28, href: "#waqiat" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story About Keeping Promises: The Merchant's Word",
+  date: "2026-10-10",
   seoTitle: "Islamic Story About Keeping Promises: The Merchant | Noor",
   seoDescription: "A merchant's promise becomes hard to keep — but keeping it protects trust and brings lasting good. An original Islamic story for kids.",
   lesson: "Honesty",
@@ -1076,11 +1140,13 @@ export const waqiat: Article[] = [
   links: [
     { title: "The Shopkeeper Who Would Not Lie", kind: "waqiat", idx: 0, href: "#waqiat" },
     { title: "The Last Piece of Cake", kind: "kids", idx: 0, href: "#kids" },
+    { title: "Islamic Story About Honesty in Online Selling: The Phone with a Secret", kind: "waqiat", idx: 19, href: "#waqiat" },
   ],
   showFullBody: true,
 },
 {
   title: "The Farmer Who Planted in a Storm",
+  date: "2026-10-12",
   seoTitle: "Islamic Story About Patience: The Farmer | Noor",
   seoDescription: "When the rains fail, old farmer Yusuf keeps planting anyway. An original Islamic story about patience (sabr) and trust in Allah's plan.",
   lesson: "Patience in hardship",
@@ -1104,10 +1170,12 @@ export const waqiat: Article[] = [
   links: [
     { title: "The Night the Lantern Stayed Lit", kind: "waqiat", idx: 2, href: "#waqiat" },
     { title: "Islamic Story for Kids About Respecting Parents: The Warm Shoes", kind: "kids", idx: 8, href: "#kids" },
+    { title: "Islamic Story About Patience with a Difficult Customer: The Patient Shopkeeper", kind: "waqiat", idx: 24, href: "#waqiat" },
   ],
 },
 {
   title: "Islamic Story About Kindness to Neighbours: The Extra Plate of Food",
+  date: "2026-10-13",
   seoTitle: "Islamic Story About Kindness to Neighbours | Noor",
   seoDescription: "An original Islamic story about kindness to neighbours: how one extra plate of food built a friendship that carried two families through hardship. Lesson, application and discussion.",
   slug: "kindness-to-neighbours-extra-plate",
@@ -1135,11 +1203,13 @@ export const waqiat: Article[] = [
   links: [
     { title: "Islamic Story About Keeping Promises: The Merchant's Word", kind: "waqiat", idx: 4, href: "#waqiat" },
     { title: "Islamic Story for Kids About Gratitude: The Warm Jacket", kind: "kids", idx: 6, href: "#kids" },
+    { title: "Islamic Story About Generosity to a Stranger: The Warm Shawl", kind: "waqiat", idx: 20, href: "#waqiat" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story About Honesty in Trade: The Extra Grain",
+  date: "2026-10-14",
   seoTitle: "Islamic Story About Honesty in Trade | Noor",
   seoDescription: "An original Islamic story about honesty in trade: a merchant discovers his old scales have been cheating customers — and chooses honesty over profit. Lesson, application and discussion.",
   slug: "honesty-in-trade-extra-grain",
@@ -1170,6 +1240,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Gratitude in Hardship: The Fisherman’s Broken Net",
+  date: "2026-10-15",
   seoTitle: "Islamic Story About Gratitude in Hardship | Noor",
   seoDescription: "An original Islamic story about gratitude in hardship: when a storm tears old Rahim’s only fishing net, his response amazes the village — lesson, application, discussion.",
   slug: "gratitude-in-hardship-fishermans-broken-net",
@@ -1198,11 +1269,13 @@ export const waqiat: Article[] = [
   links: [
     { title: "The Farmer Who Planted in a Storm", kind: "waqiat", idx: 5, href: "#waqiat" },
     { title: "Islamic Story for Kids About Gratitude: The Warm Jacket", kind: "kids", idx: 6, href: "#kids" },
+    { title: "Islamic Story About Gratitude for a Teacher: The Teacher's Old Book", kind: "waqiat", idx: 21, href: "#waqiat" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story About Repentance and Hope: The Carpenter's Secret",
+  date: "2026-10-16",
   seoTitle: "Islamic Story About Repentance and Hope | Noor",
   seoDescription: "An original Islamic story about repentance and hope: a carpenter hides a years-old secret from his employer — until the day he decides to face it. Lesson, application and discussion.",
   slug: "repentance-and-hope-carpenters-secret",
@@ -1229,11 +1302,13 @@ export const waqiat: Article[] = [
   links: [
     { title: "Islamic Story About Gratitude in Hardship: The Fisherman’s Broken Net", kind: "waqiat", idx: 8, href: "#waqiat" },
     { title: "Bilal and the Cracked Jug", kind: "kids", idx: 1, href: "#kids" },
+    { title: "Islamic Story About Repentance: The Secret That Was Not His to Tell", kind: "waqiat", idx: 15, href: "#waqiat" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story About Trust in Allah: The Traveller's Empty Waterskin",
+  date: "2026-10-17",
   seoTitle: "Islamic Story About Trust in Allah (Tawakkul) | Noor",
   seoDescription: "An original Islamic story about trust in Allah (tawakkul): a traveller's waterskin runs dry on the open road — and he learns what it truly means to tie your camel and trust.",
   slug: "trust-in-allah-travellers-empty-waterskin",
@@ -1266,6 +1341,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Justice: The Judge's Broken Window",
+  date: "2026-10-18",
   seoTitle: "Islamic Story About Justice and Fairness | Noor",
   seoDescription: "An original Islamic story about justice: a baker's window is smashed on market day — and the judge discovers the stone was thrown by his own son.",
   slug: "justice-judges-broken-window",
@@ -1296,6 +1372,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About the Courage to Admit Mistakes: The Broken Scale",
+  date: "2026-10-19",
   seoTitle: "Islamic Story About Admitting Mistakes With Courage | Noor",
   seoDescription: "An original Islamic story about the courage to admit mistakes: a dented scale weight, a hidden error, and the boy who chose honesty over comfort.",
   slug: "courage-admit-mistakes-broken-scale",
@@ -1328,6 +1405,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Patience in Hardship: The Collapsed Wall",
+  date: "2026-10-20",
   seoTitle: "Islamic Story About Patience in Hardship | Noor",
   seoDescription: "An original Islamic story about patience in hardship: a mason's wall, a sudden storm, and the morning he chose to begin again.",
   slug: "patience-hardship-collapsed-wall",
@@ -1359,6 +1437,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Contentment: The Happy Cobbler",
+  date: "2026-10-21",
   seoTitle: "Islamic Story About Contentment and True Wealth | Noor",
   seoDescription: "An original Islamic story about contentment: Bilal the poor cobbler is the happiest man in the market, and a rich merchant learns where true wealth really lives.",
   slug: "contentment-happy-cobbler",
@@ -1384,11 +1463,13 @@ export const waqiat: Article[] = [
   links: [
     { title: "The Farmer Who Planted in a Storm", kind: "waqiat", idx: 5, href: "#waqiat" },
     { title: "How Can I Make Sure My Income Is Halal? A Practical Guide", kind: "qa", idx: 11, href: "#qa" },
+    { title: "How Can I Stop Feeling Jealous When My Sibling Succeeds? An Islamic Guide", kind: "qa", idx: 30, href: "#qa" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story About Repentance: The Secret That Was Not His to Tell",
+  date: "2026-10-22",
   seoTitle: "Islamic Story About Repentance and Fixing Mistakes | Noor",
   seoDescription: "An original Islamic story about repentance: Adnan breaks his best friend's trust by sharing a secret — and learns the four steps that bring a friendship back to life.",
   slug: "repentance-secret-not-his-to-tell",
@@ -1415,11 +1496,13 @@ export const waqiat: Article[] = [
   links: [
     { title: "Islamic Story About Repentance and Hope: The Carpenter's Secret", kind: "waqiat", idx: 9, href: "#waqiat" },
     { title: "How Can I Stop Backbiting and Protect Myself from Gossip? A Practical Islamic Guide", kind: "qa", idx: 14, href: "#qa" },
+    { title: "Islamic Story About Gratitude for Health: The Legs That Carried Him", kind: "waqiat", idx: 29, href: "#waqiat" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story About Patience with People: The Loud Neighbour",
+  date: "2026-10-23",
   seoTitle: "Islamic Story About Patience with Difficult People | Noor",
   seoDescription: "An original Islamic story about patience with people: Imran's new neighbour's drums test him every evening — until kindness, not shouting, changes everything.",
   slug: "patience-with-people-loud-neighbour",
@@ -1446,11 +1529,13 @@ export const waqiat: Article[] = [
   links: [
     { title: "Islamic Story About Patience in Hardship: The Collapsed Wall", kind: "waqiat", idx: 13, href: "#waqiat" },
     { title: "How Do I Deal with Difficult Relatives Without Breaking Family Ties? An Islamic Guide", kind: "qa", idx: 19, href: "#qa" },
+    { title: "Islamic Story About Forgiving a Neighbour's Mistake: The Broken Fence", kind: "waqiat", idx: 26, href: "#waqiat" },
   ],
   showFullBody: true,
 },
 {
   title: "Islamic Story About Caring for Aging Parents: The Old Man's Shoes",
+  date: "2026-10-24",
   seoTitle: "Islamic Story About Caring for Aging Parents | Noor",
   seoDescription: "An original Islamic story about caring for aging parents: Rashid's business is thriving — until one pair of worn-out shoes teaches him what success is really for.",
   slug: "caring-for-aging-parents-old-mans-shoes",
@@ -1482,6 +1567,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Forgiveness Between Friends: The Borrowed Bicycle",
+  date: "2026-10-25",
   seoTitle: "Islamic Story About Forgiveness Between Friends | Noor",
   seoDescription: "An original Islamic story about forgiveness between friends: Hamza breaks Yusuf's beloved bicycle — and learns what an honest apology and true forgiveness can repair.",
   slug: "forgiveness-between-friends-borrowed-bicycle",
@@ -1514,6 +1600,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Honesty in Online Selling: The Phone with a Secret",
+  date: "2026-10-26",
   seoTitle: "Islamic Story About Honesty in Online Selling | Noor",
   seoDescription: "An original Islamic story about honesty in online selling: Daniyal discovers his used phone has a hidden fault — and must choose between an easy sale and the truth.",
   slug: "honesty-online-selling-phone-secret",
@@ -1545,6 +1632,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Generosity to a Stranger: The Warm Shawl",
+  date: "2026-10-27",
   seoTitle: "Islamic Story About Generosity to a Stranger | Noor",
   seoDescription: "An original Islamic story about generosity to a stranger: Yusuf gives his father's warm shawl to a shivering traveller he will never see again.",
   slug: "generosity-stranger-warm-shawl",
@@ -1575,6 +1663,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Gratitude for a Teacher: The Teacher's Old Book",
+  date: "2026-10-28",
   seoTitle: "Islamic Story About Gratitude for a Teacher | Noor",
   seoDescription: "An original Islamic story about gratitude for a teacher: Ahmed returns to thank Ustad Bilal, who once waited patiently while he learned to read.",
   slug: "gratitude-teacher-old-book",
@@ -1603,6 +1692,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Honesty When No One Is Watching: The Unlocked Shop",
+  date: "2026-10-29",
   seoTitle: "Islamic Story About Honesty When No One Is Watching | Noor",
   seoDescription: "An original Islamic story about honesty when no one is watching: Yusuf finds money a traveller overpaid in an empty shop, and runs to return it.",
   slug: "honesty-when-no-one-is-watching-unlocked-shop",
@@ -1631,6 +1721,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Forgiving a Debt: The Shopkeeper's Ledger",
+  date: "2026-10-30",
   seoTitle: "Islamic Story About Forgiving a Debt | Noor",
   seoDescription: "An original Islamic story about forgiving a debt: merchant Naseer forgives poor potter Jalal's debt after a flood, and the mercy comes back in unexpected ways.",
   slug: "forgiving-a-debt-shopkeepers-ledger",
@@ -1676,6 +1767,7 @@ export const waqiat: Article[] = [
 },
 {
   title: "Islamic Story About Patience with a Difficult Customer: The Patient Shopkeeper",
+  date: "2026-10-31",
   seoTitle: "Islamic Story About Patience with a Difficult Customer | Noor",
   seoDescription: "An original Islamic story about patience with a difficult customer: tailor Amjad answers anger with calm and a fair fix, and wins three new customers.",
   slug: "patience-difficult-customer-patient-shopkeeper",
@@ -1720,6 +1812,7 @@ export const waqiat: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story About Honesty in Returning Lost Property: The Found Purse",
+  date: "2026-11-01",
   seoTitle: "Islamic Story About Honesty in Returning Lost Property | Noor",
   seoDescription: "An original Islamic story about honesty in returning lost property: a market assistant finds a traveller's purse and chooses amanah over an easy gain.",
   slug: "honesty-returning-lost-property-found-purse",
@@ -1765,6 +1858,7 @@ export const waqiat: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story About Forgiving a Neighbour's Mistake: The Broken Fence",
+  date: "2026-11-02",
   seoTitle: "Islamic Story About Forgiving a Neighbour's Mistake | Noor",
   seoDescription: "An original Islamic story about forgiving a neighbour's mistake: a broken fence and crushed rose pot teach honest apology, proper repair, and real forgiveness.",
   slug: "forgiving-neighbours-mistake",
@@ -1811,6 +1905,7 @@ export const waqiat: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story About Keeping a Promise When It Costs You: The Carpenter's Roof",
+  date: "2026-11-03",
   seoTitle: "Islamic Story About Keeping a Promise When It Costs You | Noor",
   seoDescription: "An Islamic story about keeping a promise when it costs you: a carpenter turns down a bigger job to finish an elderly neighbour's leaking roof before the rains.",
   slug: "keeping-promise-when-it-costs-you",
@@ -1856,6 +1951,7 @@ export const waqiat: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story About Honesty in Exams: The Blank Answer",
+  date: "2026-11-04",
   seoTitle: "Islamic Story About Honesty in Exams: The Blank Answer | Noor",
   seoDescription: "An Islamic story about honesty in exams: Hamza refuses leaked questions, leaves one answer blank rather than copying, and learns why an honest mark matters.",
   slug: "honesty-in-exams-blank-answer",
@@ -1900,6 +1996,7 @@ export const waqiat: Article[] = [
   showFullBody: true,
 },{
   title: "Islamic Story About Gratitude for Health: The Legs That Carried Him",
+  date: "2026-11-05",
   seoTitle: "Islamic Story About Gratitude for Health: The Legs That Carried Him | Noor",
   seoDescription: "An Islamic story about gratitude for health: Farhan takes his legs for granted until a sprained ankle teaches him that health is a trust to care for daily.",
   slug: "gratitude-for-health-legs-that-carried-him",
@@ -1947,6 +2044,7 @@ export const waqiat: Article[] = [
 export const qaItems: Article[] = [
 {
   title: "I keep missing Fajr because of my work schedule. What can I do?",
+  date: "2026-10-10",
   seoTitle: "How to Wake Up for Fajr With a Busy Work Schedule | Noor",
   seoDescription: "Missing Fajr because of work? Gentle Islamic advice on waking up for Fajr — sleep habits, alarms, and intention that actually work.",
   topic: "Prayer & Worship",
@@ -1961,6 +2059,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "My job sometimes makes me miss Friday prayer (Jumu‘ah). What should I do?",
+  date: "2026-10-10",
   seoTitle: "Missing Jumuah Because of Work: What Islam Says | Noor",
   seoDescription: "Work making you miss Jumuah? What Islam actually says about the Friday prayer obligation — and practical steps when your job gets in the way.",
   topic: "Prayer & Worship",
@@ -1975,6 +2074,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How can my husband and I disagree without it turning into anger and days of silence?",
+  date: "2026-10-10",
   seoTitle: "How to Disagree Without Anger: Marriage Advice | Noor",
   seoDescription: "Marriage disagreements turning into anger and silence? Islamic guidance on disagreeing with love and mercy — without harming your spouse.",
   topic: "Family & Home",
@@ -1989,6 +2089,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "I lose my temper with my children and regret it every night. How do I change?",
+  date: "2026-10-10",
   seoTitle: "Losing Temper With Kids? An Islamic Parenting Guide | Noor",
   seoDescription: "Losing your temper with your children and regretting it nightly? A calm Islamic parenting guide to managing anger and reconnecting with love.",
   topic: "Character & Heart",
@@ -2003,6 +2104,10 @@ export const qaItems: Article[] = [
 },
 {
   title: "Is it allowed to take a bank loan with interest (riba) to buy a house?",
+  date: "2026-10-10",
+  links: [
+    { title: "I have some savings but no idea how zakat works. How do I calculate what I owe?", kind: "qa", idx: 9, href: "#qa" },
+  ],
   seoTitle: "Is Taking an Interest Loan for a House Haram? | Noor",
   seoDescription: "Is an interest-based home loan haram? The mainstream Islamic position on riba explained plainly, with halal alternatives to consider.",
   topic: "Money & Work",
@@ -2017,6 +2122,10 @@ export const qaItems: Article[] = [
 },
 {
   title: "My income is small. Is there any point in giving charity — and do I even owe zakat?",
+  date: "2026-10-10",
+  links: [
+    { title: "I have some savings but no idea how zakat works. How do I calculate what I owe?", kind: "qa", idx: 9, href: "#qa" },
+  ],
   seoTitle: "Does Small Charity Count? Zakat on Low Income | Noor",
   seoDescription: "Small income, big heart: does small charity count, and do you owe zakat? A clear Islamic guide to zakat and sadaqah on a tight budget.",
   topic: "Money & Work",
@@ -2032,6 +2141,10 @@ export const qaItems: Article[] = [
 },
 {
   title: "My parents want me to marry someone I do not like. What does Islam actually say?",
+  date: "2026-10-10",
+  links: [
+    { title: "How Do I Handle Family Pressure to Marry Soon When I Am Not Ready Yet? A Respectful Islamic Guide", kind: "qa", idx: 27, href: "#qa" },
+  ],
   seoTitle: "Forced Marriage in Islam: What Are Your Rights? | Noor",
   seoDescription: "Forced into a marriage you don't want? What Islam actually says about consent in marriage and your rights — explained with care.",
   topic: "Family & Home",
@@ -2047,6 +2160,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Control My Anger Quickly? A Calm Islamic Guide",
+  date: "2026-10-10",
   seoTitle: "How to Control Anger Quickly: An Islamic Guide | Noor",
   seoDescription: "Need to control anger fast? Quick Islamic techniques — pause, breathe, change position — that calm you before anger makes you act.",
   topic: "Character & Heart",
@@ -2067,10 +2181,12 @@ export const qaItems: Article[] = [
   links: [
     { title: "I keep missing Fajr because of my work schedule. What can I do?", kind: "qa", idx: 0, href: "#qa" },
     { title: "The Well of Umm Salim", kind: "waqiat", idx: 1, href: "#waqiat" },
+    { title: "How Can I Stay Calm When My Plans Fail? A Practical Islamic Guide to Tawakkul", kind: "qa", idx: 32, href: "#qa" },
   ],
 },
 {
   title: "How Do I Stay Consistent with My Prayers? A Practical Islamic Guide",
+  date: "2026-10-10",
   seoTitle: "How to Stay Consistent With 5 Daily Prayers | Noor",
   seoDescription: "Struggling to keep all five prayers? A practical Islamic guide to consistency — routines, reminders, and small steps that build the habit.",
   topic: "Prayer & Worship",
@@ -2091,10 +2207,12 @@ export const qaItems: Article[] = [
   links: [
     { title: "I keep missing Fajr because of my work schedule. What can I do?", kind: "qa", idx: 0, href: "#qa" },
     { title: "Maryam and the Long Day", kind: "kids", idx: 3, href: "#kids" },
+    { title: "How Can I Build a Daily Qur'an Reading Habit That Actually Sticks? A Practical Islamic Guide", kind: "qa", idx: 24, href: "#qa" },
   ],
 },
 {
   title: "I have some savings but no idea how zakat works. How do I calculate what I owe?",
+  date: "2026-10-12",
   seoTitle: "How to Calculate Zakat on Savings: Simple Guide | Noor",
   seoDescription: "How to calculate zakat on savings: the nisab threshold, the 2.5% rule, and a simple step-by-step — explained for beginners.",
   topic: "Money & Work",
@@ -2117,6 +2235,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Pray on Time at Work? A Practical Guide for Busy Muslims",
+  date: "2026-10-13",
   seoTitle: "How to Pray on Time at Work: Practical Tips | Noor",
   seoDescription: "Missing Zuhr or Asr because of work? Practical Islamic guidance for praying on time at the office: prayer times, talking to your manager, finding a spot, staying consistent.",
   slug: "pray-on-time-at-work-guide",
@@ -2140,10 +2259,12 @@ export const qaItems: Article[] = [
   links: [
     { title: "How Do I Stay Consistent with My Prayers? A Practical Islamic Guide", kind: "qa", idx: 8, href: "#qa" },
     { title: "The Farmer Who Planted in a Storm", kind: "waqiat", idx: 5, href: "#waqiat" },
+    { title: "How Can I Manage My Kids' Screen Time? A Practical Islamic Guide for Parents", kind: "qa", idx: 20, href: "#qa" },
   ],
 },
 {
   title: "How Can I Make Sure My Income Is Halal? A Practical Guide",
+  date: "2026-10-14",
   seoTitle: "How to Make Sure Your Income Is Halal: A Practical Guide | Noor",
   seoDescription: "Worried your earnings might not be halal? A practical Islamic guide to checking your income: what makes earnings halal, common grey areas, and steps to purify them.",
   slug: "halal-income-practical-guide",
@@ -2165,11 +2286,13 @@ export const qaItems: Article[] = [
   links: [
     { title: "Is it allowed to take a bank loan with interest (riba) to buy a house?", kind: "qa", idx: 4, href: "#qa" },
     { title: "Islamic Story About Keeping Promises: The Merchant's Word", kind: "waqiat", idx: 4, href: "#waqiat" },
+    { title: "How Do I Keep My Income Halal When My Job Touches Haram? A Practical Guide", kind: "qa", idx: 17, href: "#qa" },
   ],
   showFullBody: true,
 },
 {
   title: "How Can I Balance Deen and Dunya with a Busy Schedule? A Practical Guide",
+  date: "2026-10-15",
   seoTitle: "How to Balance Deen and Dunya with a Busy Schedule | Noor",
   seoDescription: "Pulled between faith and a packed schedule? Practical Islamic guidance for balancing deen and dunya: prayer anchors, priorities, and small consistent deeds.",
   slug: "balance-deen-dunya-busy-schedule",
@@ -2199,6 +2322,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Break My Social Media Addiction? A Practical Islamic Guide",
+  date: "2026-10-16",
   seoTitle: "How to Break Social Media Addiction: An Islamic Guide | Noor",
   seoDescription: "Hours lost to scrolling? A practical Islamic guide to breaking social media addiction: honest audit, digital boundaries, replacing the habit, and protecting prayer time.",
   slug: "break-social-media-addiction-guide",
@@ -2222,11 +2346,13 @@ export const qaItems: Article[] = [
   links: [
     { title: "How Can I Balance Deen and Dunya with a Busy Schedule? A Practical Guide", kind: "qa", idx: 12, href: "#qa" },
     { title: "Islamic Story for Kids About Prayer Habit: The Five Golden Coins", kind: "kids", idx: 10, href: "#kids" },
+    { title: "How Can I Manage My Kids' Screen Time? A Practical Islamic Guide for Parents", kind: "qa", idx: 20, href: "#qa" },
   ],
   showFullBody: true,
 },
 {
   title: "How Can I Stop Backbiting and Protect Myself from Gossip? A Practical Islamic Guide",
+  date: "2026-10-17",
   seoTitle: "How to Stop Backbiting: A Practical Islamic Guide | Noor",
   seoDescription: "Backbiting without thinking? A practical Islamic guide to stopping ghibah, handling gossip around you, and guarding your tongue — steps that actually work.",
   slug: "stop-backbiting-gossip-guide",
@@ -2250,11 +2376,13 @@ export const qaItems: Article[] = [
   links: [
     { title: "How Can I Control My Anger Quickly? A Calm Islamic Guide", kind: "qa", idx: 7, href: "#qa" },
     { title: "How Can I Break My Social Media Addiction? A Practical Islamic Guide", kind: "qa", idx: 13, href: "#qa" },
+    { title: "How Can I Stay Calm When My Plans Fail? A Practical Islamic Guide to Tawakkul", kind: "qa", idx: 32, href: "#qa" },
   ],
   showFullBody: true,
 },
 {
   title: "How Can I Make My Duas More Heartfelt and Meaningful? A Practical Islamic Guide",
+  date: "2026-10-18",
   seoTitle: "How to Make Dua More Meaningful: A Practical Guide | Noor",
   seoDescription: "Duas feeling rushed and empty? A practical Islamic guide to making heartfelt, meaningful dua — with simple steps, the best times for dua, and gentle answers to common questions.",
   slug: "meaningful-dua-practical-guide",
@@ -2283,6 +2411,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Cope with Grief and Loss? A Gentle Islamic Guide",
+  date: "2026-10-19",
   seoTitle: "How to Cope with Grief and Loss in Islam: A Gentle Guide | Noor",
   seoDescription: "Grieving a loved one? A gentle Islamic guide to coping with grief and loss — what Islam says about tears, and practical steps that carry you through.",
   slug: "cope-grief-loss-islamic-guide",
@@ -2311,6 +2440,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Do I Keep My Income Halal When My Job Touches Haram? A Practical Guide",
+  date: "2026-10-20",
   seoTitle: "Is My Income Halal If My Company Deals in Haram? Practical Guide | Noor",
   seoDescription: "Worried your salary is haram because your employer deals in interest or alcohol? A practical Islamic guide to judging your own work and keeping your income clean.",
   slug: "income-halal-job-touches-haram",
@@ -2339,6 +2469,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Stop Being Jealous of Others? An Islamic Guide to Overcoming Hasad",
+  date: "2026-10-21",
   seoTitle: "How to Overcome Jealousy (Hasad) in Islam: A Practical Guide | Noor",
   seoDescription: "Struggling with envy of others' jobs, looks or lives? A practical Islamic guide to overcoming hasad — 6 steps to a calmer, cleaner heart.",
   slug: "stop-jealousy-overcome-hasad",
@@ -2362,11 +2493,13 @@ export const qaItems: Article[] = [
   links: [
     { title: "How Can I Break My Social Media Addiction? A Practical Islamic Guide", kind: "qa", idx: 13, href: "#qa" },
     { title: "How Can I Stop Backbiting and Protect Myself from Gossip? A Practical Islamic Guide", kind: "qa", idx: 14, href: "#qa" },
+    { title: "How Can I Stop Feeling Jealous When My Sibling Succeeds? An Islamic Guide", kind: "qa", idx: 30, href: "#qa" },
   ],
   showFullBody: true,
 },
 {
   title: "How Do I Deal with Difficult Relatives Without Breaking Family Ties? An Islamic Guide",
+  date: "2026-10-22",
   seoTitle: "Dealing with Difficult Relatives in Islam: Keep Ties, Keep Peace | Noor",
   seoDescription: "Dreading family gatherings? A practical Islamic guide to dealing with difficult relatives — keep family ties, set kind boundaries, and protect your heart.",
   slug: "dealing-difficult-relatives-islamic-guide",
@@ -2390,11 +2523,13 @@ export const qaItems: Article[] = [
   links: [
     { title: "How can my husband and I disagree without it turning into anger and days of silence?", kind: "qa", idx: 2, href: "#qa" },
     { title: "Islamic Story About Justice: The Judge's Broken Window", kind: "waqiat", idx: 11, href: "#waqiat" },
+    { title: "How Can I Deal with Loneliness in a New City? A Gentle Islamic Guide", kind: "qa", idx: 26, href: "#qa" },
   ],
   showFullBody: true,
 },
 {
   title: "How Can I Manage My Kids' Screen Time? A Practical Islamic Guide for Parents",
+  date: "2026-10-23",
   seoTitle: "Kids' Screen Time: A Practical Islamic Guide for Parents | Noor",
   seoDescription: "Children glued to tablets and phones? A practical Islamic guide for parents on managing kids' screen time — clear rules, no constant fights, joyful alternatives.",
   slug: "managing-kids-screen-time-islamic-guide",
@@ -2423,6 +2558,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Become Someone Who Keeps Their Promises? An Islamic Guide",
+  date: "2026-10-24",
   seoTitle: "Keeping Promises in Islam: A Practical Guide | Noor",
   seoDescription: "Always breaking small promises? An Islamic guide to becoming a person of your word — promise less, write it down, communicate early, repair sincerely.",
   slug: "keeping-promises-islamic-guide",
@@ -2451,6 +2587,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Overcome Laziness in Prayer and Work? A Practical Islamic Guide",
+  date: "2026-10-25",
   seoTitle: "Overcoming Laziness in Prayer and Work | Noor",
   seoDescription: "Always delaying Fajr and your work? A practical Islamic guide to beating laziness — small steps, prayer-anchored days, honest rest, shame-free restarts.",
   slug: "overcome-laziness-prayer-work-islamic-guide",
@@ -2479,6 +2616,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Stop Worrying About the Future? An Islamic Guide to Anxiety and Trust",
+  date: "2026-10-26",
   seoTitle: "Stop Worrying About the Future: An Islamic Guide | Noor",
   seoDescription: "Always worrying about tomorrow? An Islamic guide to anxiety and trust in Allah — name the worry, tie your camel, pray, quiet the noise, and find peace.",
   slug: "stop-worrying-future-islamic-guide-anxiety-trust",
@@ -2525,6 +2663,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Build a Daily Qur'an Reading Habit That Actually Sticks? A Practical Islamic Guide",
+  date: "2026-10-27",
   seoTitle: "Build a Daily Qur'an Reading Habit That Sticks | Noor",
   seoDescription: "Struggling to read the Qur'an daily? A practical Islamic guide to a lasting habit: start tiny, anchor it to prayer, understand one verse, never miss twice.",
   slug: "build-daily-quran-reading-habit-islamic-guide",
@@ -2566,11 +2705,13 @@ export const qaItems: Article[] = [
   links: [
     { title: "How Can I Make My Duas More Heartfelt and Meaningful? A Practical Islamic Guide", kind: "qa", idx: 15, href: "#qa" },
     { title: "Islamic Story for Kids About Prayer Habit: The Five Golden Coins", kind: "kids", idx: 10, href: "#kids" },
+    { title: "How Can I Balance Deen and Dunya with a Busy Schedule? A Practical Guide", kind: "qa", idx: 12, href: "#qa" },
   ],
   showFullBody: true,
 },
 {
   title: "How Can I Handle Criticism at Work Without Losing My Temper? A Practical Islamic Guide",
+  date: "2026-10-28",
   seoTitle: "Handle Criticism at Work Without Losing Your Temper | Noor",
   seoDescription: "Criticised at work and close to losing your temper? A practical Islamic guide: pause, check what is true, answer calmly, fix what is fair, and let the rest go.",
   slug: "handle-criticism-work-without-losing-temper-islamic-guide",
@@ -2612,11 +2753,13 @@ export const qaItems: Article[] = [
   links: [
     { title: "How Can I Control My Anger Quickly? A Calm Islamic Guide", kind: "qa", idx: 7, href: "#qa" },
     { title: "Islamic Story About Patience with People: The Loud Neighbour", kind: "waqiat", idx: 16, href: "#waqiat" },
+    { title: "How Can I Overcome Laziness in Prayer and Work? A Practical Islamic Guide", kind: "qa", idx: 22, href: "#qa" },
   ],
   showFullBody: true,
 },
 {
   title: "How Can I Deal with Loneliness in a New City? A Gentle Islamic Guide",
+  date: "2026-10-29",
   seoTitle: "Deal with Loneliness in a New City as a Muslim | Noor",
   seoDescription: "Lonely in a new city or as a new Muslim? A gentle Islamic guide to belonging: find one anchor, take one small step a week, serve others, and seek help early.",
   slug: "deal-with-loneliness-new-city-muslim-guide",
@@ -2662,6 +2805,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Do I Handle Family Pressure to Marry Soon When I Am Not Ready Yet? A Respectful Islamic Guide",
+  date: "2026-10-30",
   seoTitle: "Family Pressure to Marry Soon When Not Ready | Noor",
   seoDescription: "Family pressuring you to marry soon but you are not ready? A respectful Islamic guide: hear the worry, agree a timeline, set criteria, and keep ties warm.",
   slug: "family-pressure-marry-soon-not-ready-guide",
@@ -2708,6 +2852,7 @@ export const qaItems: Article[] = [
 },
 {
   title: "How Can I Deal with Exam Stress and Study Pressure? A Calm Islamic Guide",
+  date: "2026-10-31",
   seoTitle: "Exam Stress and Study Pressure: A Calm Islamic Guide | Noor",
   seoDescription: "Exam stress making your mind go blank? A calm Islamic guide for students: small revision plans, prayer-anchored days, active study, sleep, and trust in Allah.",
   slug: "exam-stress-study-pressure-calm-guide",
@@ -2753,6 +2898,7 @@ export const qaItems: Article[] = [
   showFullBody: true,
 },{
   title: "How Can I Handle Backbiting at Family Gatherings Without Causing a Fight? A Calm Islamic Guide",
+  date: "2026-11-01",
   seoTitle: "Handle Backbiting at Family Gatherings Without a Fight | Noor",
   seoDescription: "Backbiting at a family gathering? A calm Islamic guide: change the subject, defend kindly, leave gracefully, and protect ties without joining the gossip.",
   slug: "backbiting-family-gatherings-calm-guide",
@@ -2792,10 +2938,12 @@ export const qaItems: Article[] = [
   links: [
     { title: "How Can I Stop Backbiting and Protect Myself from Gossip? A Practical Islamic Guide", kind: "qa", idx: 14, href: "#qa" },
     { title: "How Do I Deal with Difficult Relatives Without Breaking Family Ties? An Islamic Guide", kind: "qa", idx: 19, href: "#qa" },
+    { title: "How Can I Handle Criticism from Family Without Losing Confidence? An Islamic Guide", kind: "qa", idx: 31, href: "#qa" },
   ],
   showFullBody: true,
 },{
   title: "How Can I Stop Feeling Jealous When My Sibling Succeeds? An Islamic Guide",
+  date: "2026-11-02",
   seoTitle: "Stop Feeling Jealous When Your Sibling Succeeds | Noor",
   seoDescription: "Jealous of a sibling's success? A calm Islamic guide: name the feeling, pray for both of you, stop comparing, and protect the bond while building your own path.",
   slug: "jealousy-sibling-success-islamic-guide",
@@ -2839,6 +2987,7 @@ export const qaItems: Article[] = [
   showFullBody: true,
 },{
   title: "How Can I Handle Criticism from Family Without Losing Confidence? An Islamic Guide",
+  date: "2026-11-03",
   seoTitle: "Handle Criticism from Family Without Losing Confidence | Noor",
   seoDescription: "Family criticism hurting your confidence? An Islamic guide: pause, sort criticism into three baskets, answer calmly, set boundaries, and rebuild confidence.",
   slug: "handling-family-criticism-confidence-islamic-guide",
@@ -2878,10 +3027,12 @@ export const qaItems: Article[] = [
   links: [
     { title: "How Can I Handle Criticism at Work Without Losing My Temper? A Practical Islamic Guide", kind: "qa", idx: 25, href: "#qa" },
     { title: "How Do I Deal with Difficult Relatives Without Breaking Family Ties? An Islamic Guide", kind: "qa", idx: 19, href: "#qa" },
+    { title: "How Can I Handle Backbiting at Family Gatherings Without Causing a Fight? A Calm Islamic Guide", kind: "qa", idx: 29, href: "#qa" },
   ],
   showFullBody: true,
 },{
   title: "How Can I Stay Calm When My Plans Fail? A Practical Islamic Guide to Tawakkul",
+  date: "2026-11-04",
   seoTitle: "How to Stay Calm When Your Plans Fail | Islamic Guide | Noor",
   seoDescription: "When your plans fail, stay calm with tawakkul: pause, grieve briefly, judge your effort fairly, do your part fully, take one small step, and plan again wisely.",
   slug: "staying-calm-when-plans-fail-tawakkul-guide",
@@ -2925,6 +3076,7 @@ export const qaItems: Article[] = [
   showFullBody: true,
 },{
   title: "How Can I Choose Good Friends and Company Wisely? An Islamic Guide",
+  date: "2026-11-05",
   seoTitle: "How to Choose Good Friends and Company Wisely | Islamic Guide | Noor",
   seoDescription: "Choose good friends wisely: notice where a friendship is taking you, test character over charm, keep kind boundaries, and become the good friend you seek.",
   slug: "choosing-good-friends-company-wisely-guide",
