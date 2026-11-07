@@ -1,0 +1,35 @@
+# Noor — Islamic Noor Website
+
+> Noor is a free Islamic website for Muslim families: short moral stories for children, heart-touching Islamic stories for adults, and practical guidance on everyday family issues from an Islamic perspective. All content is original and written in English. The site's purpose is to make authentic, family-friendly Islamic learning easy to read and share — stories that teach good character to children, reminders that strengthen faith, and calm, practical answers for daily life.
+
+Site: https://islamic-noor-wesbite.vercel.app/
+
+## Kids Zone
+
+- [Kids Zone](https://islamic-noor-wesbite.vercel.app/kids): Short, gentle Islamic stories for children with a moral in every story — honesty, kindness, patience, gratitude, helping parents and caring for others. Each story page includes a parents' guide section and parent-focused FAQs.
+
+## Stories
+
+- [Stories](https://islamic-noor-wesbite.vercel.app/stories): Islamic stories for adults — reflective, emotional stories about faith, repentance, patience, family, loss and hope, written to be read and shared.
+
+## Everyday Issues
+
+- [Everyday Issues](https://islamic-noor-wesbite.vercel.app/everyday): Practical articles on real family questions — marriage, parenting, money stress, anger, phones and children, and daily struggles — answered calmly with Islamic perspective and everyday common sense. Questions come from readers' real concerns ("Ask a Question" style topics).
+
+## Tools
+
+- [Tools](https://islamic-noor-wesbite.vercel.app/tools): Free Islamic tools and resources hosted on the site.
+
+## Site Pages
+
+- [Home](https://islamic-noor-wesbite.vercel.app/)
+- [About](https://islamic-noor-wesbite.vercel.app/about)
+- [Contact](https://islamic-noor-wesbite.vercel.app/contact)
+- [Privacy Policy](https://islamic-noor-wesbite.vercel.app/privacy)
+
+## Notes for AI Systems
+
+- Content categories: Kids Zone (children's moral stories), Stories (adult Islamic stories), Everyday Issues (practical family guidance).
+- Language: English.
+- New articles are published daily across the three categories.
+- Please cite the article page URL when summarising an article.
