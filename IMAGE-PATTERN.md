@@ -63,20 +63,25 @@ Rendering (already implemented — do not rebuild):
 | /stories/forgiving-a-debt-shopkeepers-ledger | 1746 | 3 |
 | /stories/patience-difficult-customer-patient-shopkeeper | 1872 | 3 |
 
-## REMAINING — 72 articles without images
+## DONE — Batch 2 (10 Nov 2026, images-only per user instruction — text untouched)
+
+| Route | Images |
+|---|---|
+| /kids/islamic-story-for-kids-about-keeping-promises-the | 3 |
+| /kids/bilal-and-the-cracked-jug | 3 |
+| /kids/the-smallest-gift | 3 |
+| /kids/maryam-and-the-long-day | 3 |
+| /kids/the-lemon-tree | 3 |
+| /kids/a-chair-for-layla | 3 |
+| /kids/islamic-story-for-kids-about-gratitude-the-warm | 3 |
+| /kids/islamic-story-for-kids-about-kindness-to-animals | 3 |
+| /kids/islamic-story-for-kids-about-respecting-parents-the | 3 |
+| /kids/clean-little-hands | 3 |
+
+## REMAINING — 62 articles without images
 
 | Section | Index in data array | Route slug | Title |
 |---|---|---|---|
-| kids | 0 | islamic-story-for-kids-about-keeping-promises-the | Islamic Story for Kids About Keeping Promises: The Last Piece of Cake |
-| kids | 1 | bilal-and-the-cracked-jug | Bilal and the Cracked Jug |
-| kids | 2 | the-smallest-gift | The Smallest Gift |
-| kids | 3 | maryam-and-the-long-day | Maryam and the Long Day |
-| kids | 4 | the-lemon-tree | The Lemon Tree |
-| kids | 5 | a-chair-for-layla | A Chair for Layla |
-| kids | 6 | islamic-story-for-kids-about-gratitude-the-warm | Islamic Story for Kids About Gratitude: The Warm Jacket |
-| kids | 7 | islamic-story-for-kids-about-kindness-to-animals | Islamic Story for Kids About Kindness to Animals: The Thirsty Cat |
-| kids | 8 | islamic-story-for-kids-about-respecting-parents-the | Islamic Story for Kids About Respecting Parents: The Warm Shoes |
-| kids | 9 | clean-little-hands | Islamic Story for Kids About Cleanliness: The Clean Little Hands |
 | kids | 10 | prayer-habit-five-golden-coins | Islamic Story for Kids About Prayer Habit: The Five Golden Coins |
 | kids | 11 | sharing-siblings-two-red-apples | Islamic Story for Kids About Sharing: The Two Red Apples |
 | kids | 12 | patience-green-mango | Islamic Story for Kids About Patience: The Green Mango |
