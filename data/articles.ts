@@ -3534,6 +3534,13 @@ export const qaItems: Article[] = [
   asked: "Practical guide · Published 17 October 2026",
   summary: "You asked: “I catch myself backbiting without even thinking, and my family gossips all the time. How do I stop — and what do I do when others gossip around me?”",
   ref: "The Prophet Muhammad ﷺ defined backbiting as mentioning your brother with what he dislikes (reported in Muslim — meaning in our own words); the Qur'an likens backbiting to eating the flesh of one's dead brother (Surah al-Hujurat, 49:12 — meaning in our own words). This guide is original educational wording, not a copied fatwa.",
+  image: "/images/stop-backbiting-gossip-guide.jpg",
+  imageAlt: "A closed Holy Qur'an with wooden prayer beads resting on it beside a cup of tea in soft morning light",
+  imageCaption: "Guarding the tongue starts with a full heart: a few minutes of Qur'an and dhikr each morning.",
+  bodyImages: [
+    { src: "/images/stop-backbiting-gossip-guide-quiet-reflection.jpg", alt: "An empty wooden chair by a bright window with a closed notebook and a pen waiting on a small side table", caption: "For one week, just notice your triggers — no self-punishment. When you know the trigger, you can disarm it.", after: 4 },
+    { src: "/images/stop-backbiting-gossip-guide-new-morning.jpg", alt: "A quiet street at dawn with a mosque minaret rising against a soft golden pink sky", caption: "A new morning, a new habit: fill the day, and the tongue has less room to slip.", after: 7 },
+  ],
   body: [
       "You asked: “I catch myself backbiting without even thinking, and my family gossips all the time. How do I stop — and what do I do when others start gossiping around me?”",
       "Noor's answer: Yes, you can stop — and the fact that it bothers you is already half the cure. Most people do not backbite out of hatred; they do it out of habit, boredom, or the pull of a lively gathering. That means it is a habit — and habits can be replaced. Here is a practical plan.",
